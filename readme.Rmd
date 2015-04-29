@@ -14,7 +14,9 @@ known_files <- list(readme = list(file_name = "readme.Rmd",
                     parsed_readme = list(file_name = "readme.md",
                                          descr = paste0("Parsed readme.Rmd")),
                     start = list(file_name = "start.R",
-                                 descr = "All packages, variables and so on needed for the research. Should be sourced every time.")
+                                 descr = "All packages, variables and so on universally needed for the research. Should be sourced every time."),
+                    cs_analysis = list(file_name = "cs_analysis.R",
+                                 descr = "Analysis of cleavage sites amino acid composition.")
                     )
 
 known_files_names <- sapply(known_files, function(i) i[["file_name"]])
@@ -35,3 +37,6 @@ colnames(files_table) <- c("File name", "Description")
 print(xtable(files_table), type = "html", include.rownames = FALSE)
 ```
 
+### Repository rules
+1. Each file must have a desctiption in readme using the R code in *readme.Rmd*.
+2. Use comments frequently.
