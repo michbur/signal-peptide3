@@ -8,7 +8,9 @@ seqs_pos <- read_uniprot(paste0(pathway, "sept_signal.txt"), euk = TRUE)
 #aminoacids in background
 bg_data <- data.frame(t(sapply(seqs_pos, function(i) {
   i[2L:51]
-})))
+}))) %>% na.omit #too short proteins will leave NAs in sequences
+
+
 
 #cleavage site data
 cs_data <- t(sapply(seqs_pos, function(i) {
@@ -19,42 +21,49 @@ cs_data <- t(sapply(seqs_pos, function(i) {
 }))
 
 
-##
-# calculate background -----------------------------------
-##
+#roi - region of the interest
+ngrams_freqs <- function(roi, background, n = 1) {
+  
+  ##
+  # calculate background -----------------------------------
+  ##
+  
+  bg_table <- background %>% as.matrix %>% seq2ngrams(n, a()[-1], pos = FALSE) %>%
+    unlist %>% table %>% data.frame 
+  
+  bg_counts <- bg_table[["Freq"]]
+  names(bg_counts) <- bg_table[["."]]
 
-bg_counts <- bg_data %>% unlist %>% table %>% data.frame %>% select(Freq) %>% unlist
+  
+  ##
+  # calculate amino acids frequency in cs -----------------------------------
+  ##
+  
+  roi_ngrams <- roi %>% as.matrix %>% seq2ngrams(n, a()[-1], pos = FALSE)
+  
+  roi_counts <- cbind(bg_table[["."]], do.call(cbind, lapply(1L:ncol(roi_ngrams), function(single_position) {
+    factor(roi_ngrams[, single_position], levels = bg_table[["."]]) %>% 
+      table %>% data.frame %>% select(Freq)
+  })))
+  #solve it later by smart select call with .dots
+  
+  colnames(roi_counts) <- c("ngrams", sapply(as.character(c(-5:(5 - n + 1))), function(i) 
+    ifelse(substr(i, 0, 1) == "-", i, paste0("+", i))))
+    
+  mroi_counts <- melt(roi_counts)
+    
+  mroi_counts[["value"]] <- mroi_counts[["value"]]/bg_counts
+  mroi_counts
+}
 
-##
-# calculate amino acids frequency in cs -----------------------------------
-##
+tmp <- ngrams_freqs(cs_data, bg_data)
 
-mcs_counts <- melt(data.frame(a = rownames(apply(cs_data, 2, table)), apply(cs_data, 2, table)))
-
-levels(mcs_counts[["variable"]]) <- sapply(as.character(c(-5:5)), function(i) 
-  ifelse(substr(i, 0, 1) == "-", i, paste0("+", i)))
-
-#posible way how to reorder amino acids to make them appear in the order as they are in our aaagregation
-#mconsensus[["a"]] <- factor(as.character(mconsensus[["a"]]), toupper(unlist(aaaggregation)))
-
-aa_groups <- list(`1` = c("k", "r", "h"), 
-                  `2` = c("v", "i", "l", "m", "f", "w", "c"), 
-                  `3` = c("s", "t", "n", "q"), 
-                  `4` = c("d", "e", "a", "p", "y", "g"))
-
-#add group information to amino acids
-suppressWarnings(mcs_counts <- cbind(group = sapply(names(unlist(aa_groups)), substr, 0, 1), mcs_counts))
-#suppress expected warning 'row names were found from a short variable and have been discarded'
-
-mcs_counts[["value"]] <- mcs_counts[["value"]]/bg_counts
-
-
-ggplot(mcs_counts, aes(x = variable, y = value, fill = a)) +
+ggplot(ngrams_freqs(cs_data, bg_data), aes(x = variable, y = value, fill = ngrams)) +
   geom_bar(stat = "identity", position = "dodge") +
   scale_x_discrete("Position") +
   scale_y_continuous("Frequency") +
   scale_fill_discrete("Amino acid") +
-  geom_text(aes(label=a), position=position_dodge(width=0.9), vjust=-0.25) +
+  geom_text(aes(label=ngrams), position=position_dodge(width=0.9), vjust=-0.25) +
   facet_wrap(~ group)
 
 
