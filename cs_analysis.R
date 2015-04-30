@@ -52,18 +52,20 @@ ngrams_freqs <- function(roi, background, n = 1) {
     
   mroi_counts <- melt(roi_counts)
     
-  mroi_counts[["value"]] <- mroi_counts[["value"]]/bg_counts
+  mroi_counts[["freq"]] <- mroi_counts[["value"]]/bg_counts
   mroi_counts
 }
 
-tmp <- ngrams_freqs(cs_data, bg_data)
+freqs2 <- ngrams_freqs(cs_data, bg_data, 1)
 
-ggplot(ngrams_freqs(cs_data, bg_data), aes(x = variable, y = value, fill = ngrams)) +
+library(entropy)
+#calculate entropy to assess which sites ae the most informative
+group_by(freqs2, variable) %>% summarise(entr = entropy.empirical(value))
+
+ggplot(freqs2, aes(x = variable, y = value, fill = ngrams)) +
   geom_bar(stat = "identity", position = "dodge") +
   scale_x_discrete("Position") +
   scale_y_continuous("Frequency") +
   scale_fill_discrete("Amino acid") +
-  geom_text(aes(label=ngrams), position=position_dodge(width=0.9), vjust=-0.25) +
-  facet_wrap(~ group)
-
+  geom_text(aes(label=ngrams), position=position_dodge(width=0.9), vjust=-0.25) 
 
