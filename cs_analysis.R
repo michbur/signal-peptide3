@@ -63,13 +63,16 @@ library(entropy)
 #calculate entropy to assess which sites ae the most informative
 group_by(freqs2, variable) %>% summarise(entropy = entropy.empirical(value))
 
-group_by(freqs2, variable) %>% filter(freq > quantile(freq, 0.99))
+#how to choose important n-grams? they must have large value (count) and freq
+group_by(freqs2, variable) %>% filter(freq > quantile(freq, 0.75) & value > quantile(value, 0.75))
 
 
-ggplot(freqs2, aes(x = variable, y = value, fill = ngrams)) +
-  geom_bar(stat = "identity", position = "dodge") +
-  scale_x_discrete("Position") +
-  scale_y_continuous("Frequency") +
-  scale_fill_discrete("Amino acid") +
-  geom_text(aes(label=ngrams), position=position_dodge(width=0.9), vjust=-0.25) 
+
+
+# ggplot(freqs2, aes(x = variable, y = value, fill = ngrams)) +
+#   geom_bar(stat = "identity", position = "dodge") +
+#   scale_x_discrete("Position") +
+#   scale_y_continuous("Frequency") +
+#   scale_fill_discrete("Amino acid") +
+#   geom_text(aes(label=ngrams), position=position_dodge(width=0.9), vjust=-0.25) 
 
