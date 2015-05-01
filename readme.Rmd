@@ -16,10 +16,10 @@ known_files <- list(readme = list(file_name = "readme.Rmd",
                     start = list(file_name = "start.R",
                                  descr = "All packages, variables and so on universally needed for the research. Should be sourced every time."),
                     cs_analysis = list(file_name = "cs_analysis.R",
-                                 descr = "Analysis of cleavage sites amino acid composition."),
+                                       descr = "Analysis of cleavage sites amino acid composition."),
                     cs_exploratory = list(file_name = "cs_exploratory_analysis.R",
-                                 descr = "Easy plots of amino acids versus their group in the cleavage sites. Use this code to create better groups for cleavage site prediction.")
-                    )
+                                          descr = "Easy plots of amino acids versus their group in the cleavage sites. Use this code to create better groups for cleavage site prediction.")
+)
 
 known_files_names <- sapply(known_files, function(i) i[["file_name"]])
 
@@ -31,11 +31,26 @@ if(!all(repo_files %in% known_files_names)) {
                  paste(repo_files[!repo_files %in% known_files_names], collapse = ", "), 
                  " do not have a proper description."))
   repo_files <- repo_files[repo_files %in% known_files_names]
+}
+
+sourced_files <- sapply(lapply(repo_files, function(single_file) {
+  all_lines <- readLines(single_file)
+  source_lines <- grep("^source\\(", all_lines, fixed = FALSE)
+  file_names <- if(length(source_lines) > 0) {
+    #source allows to call only one file, so maybe we can presume that
+    #in single line we have only single source call
+    #I doubt someone would be goung source("xyz"); source("zyx") and so on in a single line
+    
+    vapply(all_lines[source_lines], function(single_line)
+      strsplit(strsplit(single_line, 'source("', fixed = TRUE)[[1]][[2]],
+               '\"')[[1]][[1]], "a")
+  } else {
+    ""
   }
+}), paste0, collapse = ", ")
 
-
-files_table <- data.frame(repo_files, sapply(repo_files, function(i) known_files[[which(i == known_files_names)]][["descr"]]))
-colnames(files_table) <- c("File name", "Description")
+files_table <- data.frame(repo_files, sapply(repo_files, function(i) known_files[[which(i == known_files_names)]][["descr"]]), sourced_files)
+colnames(files_table) <- c("File name", "Description", "Sourced files")
 print(xtable(files_table), type = "html", include.rownames = FALSE)
 ```
 
