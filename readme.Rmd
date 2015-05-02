@@ -18,7 +18,9 @@ known_files <- list(readme = list(file_name = "readme.Rmd",
                     cs_analysis = list(file_name = "cs_analysis.R",
                                        descr = "Analysis of cleavage sites amino acid composition."),
                     cs_exploratory = list(file_name = "cs_exploratory_analysis.R",
-                                          descr = "Easy plots of amino acids versus their group in the cleavage sites. Use this code to create better groups for cleavage site prediction.")
+                                          descr = "Easy plots of amino acids versus their group in the cleavage sites. Use this code to create better groups for cleavage site prediction."),
+                    kmer_prediction = list(file_name = "kmer_cs_prediction.R",
+                                          descr = "Adding n-gram to hsmm to predict cleavage site more accurately.")
 )
 
 known_files_names <- sapply(known_files, function(i) i[["file_name"]])
