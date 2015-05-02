@@ -57,14 +57,15 @@ ngrams_freqs <- function(roi, background, n = 1, d = 0) {
   mroi_counts
 }
 
-freqs2 <- ngrams_freqs(cs_data, bg_data, 3, d = c(1, 0))
+freqs3 <- ngrams_freqs(cs_data, bg_data, 3, d = c(1, 1))
 
 library(entropy)
 #calculate entropy to assess which sites ae the most informative
 group_by(freqs2, variable) %>% summarise(entropy = entropy.empirical(value))
 
 #how to choose important n-grams? they must have large value (count) and freq
-group_by(freqs2, variable) %>% filter(freq > quantile(freq, 0.75) & value > quantile(value, 0.75))
+group_by(freqs3, variable) %>% filter(value > quantile(value, 0.999)) %>% 
+  ungroup %>% select(ngrams) %>% as.vector %>% decode_ngrams
 
 
 
