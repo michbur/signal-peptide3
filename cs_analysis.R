@@ -57,6 +57,7 @@ ngrams_freqs <- function(roi, background, n = 1, d = 0) {
   mroi_counts
 }
 
+#why distance c(1, 1)? to have -3, -1, 1 position
 freqs3 <- ngrams_freqs(degenerate(cs_data, aaaggregation), 
                        degenerate(bg_data, aaaggregation), 3, d = c(1, 1))
 
