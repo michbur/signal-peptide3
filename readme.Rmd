@@ -5,7 +5,7 @@ Date: `r format(Sys.Date(), format="%B %d %Y")`
 
 ### List of files
 
-```{r,echo=FALSE,results='asis'}
+```{r,echo=FALSE,results='asis',warning=FALSE}
 library(xtable)
 
 #list of descriptions
@@ -22,7 +22,9 @@ known_files <- list(readme = list(file_name = "readme.Rmd",
                     cs_ngrams = list(file_name = "cs_ngrams.R",
                                      descr = "Important n-gram in cleavage sites."),
                     kmer_prediction = list(file_name = "kmer_cs_prediction.R",
-                                          descr = "Adding n-gram to hsmm to predict cleavage site more accurately.")
+                                          descr = "Adding n-gram to hsmm to predict cleavage site more accurately."),
+                    cs_ngrams_dat = list(file_name = "cs_ngrams.RData",
+                                          descr = "Data created by cs_ngrams.R")
 )
 
 known_files_names <- sapply(known_files, function(i) i[["file_name"]])
