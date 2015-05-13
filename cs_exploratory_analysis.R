@@ -21,7 +21,6 @@ cs_data <- t(sapply(seqs_pos, function(i) {
   i[(cs - 6):(cs+4)]
 }))
 
-
 ##
 # calculate background -----------------------------------
 ##

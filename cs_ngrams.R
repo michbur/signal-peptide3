@@ -54,4 +54,21 @@ bitrigrams <- count_multigrams(seq = learning_dat,
                                pos = TRUE)
 
 test_res <- test_features(targets, bitrigrams, adjust = NULL)
+#colnames(bitrigrams) %in% names(test_res)
+#why does test_features introduce NA values?
 save(test_res, file = "cs_ngrams.RData")
+
+imp_ngrams <- na.omit(cut(test_res, breaks = c(0, 1e-6, 1))[[1]])
+
+#n-gram lengths
+n_l <- sapply(strsplit(ngrams2df(imp_ngrams)[, "ngram"], ".", fixed = TRUE), length)
+
+ngram_tables <- lapply(unique(n_l), function(i) table_ngrams(learning_dat, imp_ngrams[n_l == i], targets))
+
+imp3 <- ngram_tables[[3]]    
+
+imp3[, "target0"] <- imp3[, "target0"]/(2*nrow(cs_data))
+imp3[, "target1"] <- imp3[, "target1"]/nrow(cs_data)
+best_four <- imp3[order(imp3[, "target1"] - imp3[, "target0"], decreasing = TRUE), "ngram"][1L:4]
+dput(as.character(best_four))
+
