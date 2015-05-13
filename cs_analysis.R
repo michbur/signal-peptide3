@@ -6,9 +6,9 @@ source("start.R")
 seqs_pos <- read_uniprot(paste0(pathway, "sept_signal.txt"), euk = TRUE)
 
 #aminoacids in background
-bg_data <- data.frame(t(sapply(seqs_pos, function(i) {
+bg_data <- t(sapply(seqs_pos, function(i) {
   i[2L:51]
-}))) %>% na.omit #too short proteins will leave NAs in sequences
+})) %>% na.omit #too short proteins will leave NAs in sequences
 
 
 
@@ -57,19 +57,25 @@ ngrams_freqs <- function(roi, background, n = 1, d = 0) {
   mroi_counts
 }
 
-freqs2 <- ngrams_freqs(cs_data, bg_data, 3, d = c(1, 0))
+#why distance c(1, 1)? to have -3, -1, 1 position
+freqs3 <- ngrams_freqs(degenerate(cs_data, aaaggregation), 
+                       degenerate(bg_data, aaaggregation), 3, d = c(1, 1))
 
 library(entropy)
 #calculate entropy to assess which sites ae the most informative
-group_by(freqs2, variable) %>% summarise(entropy = entropy.empirical(value))
+group_by(freqs3, variable) %>% summarise(entropy = entropy.empirical(value))
 
-group_by(freqs2, variable) %>% filter(freq > quantile(freq, 0.99))
+#how to choose important n-grams? they must have large value (count) and freq
+group_by(freqs3, variable) %>% filter(value > quantile(value, 0.999)) %>% 
+  ungroup %>% select(ngrams) %>% unlist %>% as.character %>% decode_ngrams %>% dput
+#c("2_4_4", "2_4_2", "4_4_4", "4_2_4", "2_4_4", "4_4_2", "4_4_4")
 
 
-ggplot(freqs2, aes(x = variable, y = value, fill = ngrams)) +
-  geom_bar(stat = "identity", position = "dodge") +
-  scale_x_discrete("Position") +
-  scale_y_continuous("Frequency") +
-  scale_fill_discrete("Amino acid") +
-  geom_text(aes(label=ngrams), position=position_dodge(width=0.9), vjust=-0.25) 
+
+# ggplot(freqs2, aes(x = variable, y = value, fill = ngrams)) +
+#   geom_bar(stat = "identity", position = "dodge") +
+#   scale_x_discrete("Position") +
+#   scale_y_continuous("Frequency") +
+#   scale_fill_discrete("Amino acid") +
+#   geom_text(aes(label=ngrams), position=position_dodge(width=0.9), vjust=-0.25) 
 
