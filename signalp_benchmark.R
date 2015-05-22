@@ -24,6 +24,8 @@ if(Sys.info()["nodename"] == "phobos" )
 library(signalHsmm)
 library(seqinr)
 
+source("signalp_benchmark_fun.R")
+
 file_names <- c("nonsignal_peptides10", "nonsignal_peptides1", "nonsignal_peptides2", 
   "nonsignal_peptides3", "nonsignal_peptides4", "nonsignal_peptides5", 
   "nonsignal_peptides6", "nonsignal_peptides7", "nonsignal_peptides8", 
