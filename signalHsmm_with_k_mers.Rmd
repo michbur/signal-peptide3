@@ -15,7 +15,7 @@ library(knitr)
 
 Na wstępie zobaczmy jak wyglądają okolice peptydów sygnałowych (od miejsca -3 do miesca +2)
 
-```{r, echo=FALSE, results='asis'}
+```{r, echo=FALSE}
 aa_group = get("aaaggregation")
 b <- lapply(benchmark_dat[1:140], function(x){
   cut <- attr(x, "sig")[2]
@@ -27,7 +27,9 @@ b <- lapply(benchmark_dat[1:140], function(x){
 
 b <- matrix(unlist(b), ncol=5, byrow = TRUE)
 # print.xtable(xtable(b, digits = 0), type = "html", include.rownames = FALSE)
-kable(b)
+# kable(b)
+(table(apply(b, 1, function(x) paste0(x, collapse=""))))
+(table(apply(b, 1, function(x) paste0(x[1:3], collapse=""))))
 ```
 
 Parametry wejściowe
@@ -80,7 +82,7 @@ I teraz k-mery
 
 ```{r}
 p4 <- 0
-p3 <- 0/(1-p4)
+p3 <- 0.2/(1-p4)
 p2 <- 0.2/(1-p4)/(1-p3)
 p1 <- 0.2/(1-p4)/(1-p3)/(1-p2)
 
@@ -96,26 +98,27 @@ pState2 <- 3
 nState2 <- 4
 pTrans2 <- p2
 
-# #-2|234
-# kMer2 <- c(2,3,4)
-# pState2 <- 3
-# nState2 <- 4
-# pTrans2 <- p2
-# 
+#-3|3(2,3,4)4
+kMer3 <- list(3,c(2,3,4), 4)
+pState3 <- 3
+nState3 <- 4
+pTrans3 <- p3
+
 # # -2|1_44
-# kMer3 <- list(1, c(1,2,3,4), 4,4)
-# pState3 <- 3
-# nState3 <- 4
-# pTrans3 <- p3
+# kMer4 <- list(1, c(1,2,3,4), 4,4)
+# pState4 <- 3
+# nState4 <- 4
+# pTrans4 <- p4
 
 
 parametersSet2 <- add_k_mer_state2(kMer1, pipar, tpmpar, od, params, pState1, nState1, pTrans1, d=3)
 parametersSet3 <- add_k_mer_state2(kMer2, pipar = parametersSet2$pipar, tpmpar = parametersSet2$tpmpar, 
                                    od = parametersSet2$od, params = parametersSet2$params,
                                    pState2, nState2, pTrans2, d=3)
-parametersSet5 <- parametersSet3
-# parametersSet4 <- add_k_mer_state2(kMer3, pipar = parametersSet3$pipar, tpmpar = parametersSet3$tpmpar, 
-#                                    od = parametersSet3$od, params = parametersSet3$params, pState3, nState3, pTrans3, d=2)
+# parametersSet5 <- parametersSet3
+parametersSet4 <- add_k_mer_state2(kMer3, pipar = parametersSet3$pipar, tpmpar = parametersSet3$tpmpar, 
+                                   od = parametersSet3$od, params = parametersSet3$params, pState3, nState3, pTrans3, d=3)#
+parametersSet5 <- parametersSet4
 # parametersSet5 <- add_k_mer_state2(kMer4, pipar = parametersSet4$pipar, tpmpar = parametersSet4$tpmpar, 
 #                                    od = parametersSet4$od, params = parametersSet4$params, pState4, nState4, pTrans4, d=3)
 ```
@@ -150,6 +153,9 @@ for(i in 1:n){
                     c_site5)
   c_site5 <- ifelse(any(viterbi_path5 == 13), 
                     min(which(viterbi_path5 == 13)), 
+                    c_site5)
+  c_site5 <- ifelse(any(viterbi_path5 == 17), 
+                    min(which(viterbi_path5 == 17)), 
                     c_site5)
   #get probabilities of signal peptide model
   prob.signal5 <- viterbi_res5[["viterbi"]][c_site5, viterbi_path5[c_site5]]
