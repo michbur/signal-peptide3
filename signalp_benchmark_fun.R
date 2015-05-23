@@ -13,7 +13,7 @@ read_signalp41 <- function(connection) {
 
 
 benchmark_class <- function(filename) {
-  seqs <- read_uniprot(paste0(pathway, filename, ".txt"), euk = TRUE, what = NULL)
+  seqs <- read_uniprot(paste0(pathway, filename, ".txt"), euk = TRUE, what = "signal")
   
   lengths <- sapply(seqs, length)
   

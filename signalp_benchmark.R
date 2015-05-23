@@ -30,5 +30,5 @@ file_names <- c("nonsignal_peptides10", "nonsignal_peptides1", "nonsignal_peptid
   "nonsignal_peptides6", "nonsignal_peptides7", "nonsignal_peptides8", 
   "nonsignal_peptides9", "signal_peptides")
 
-sapply(file_names, benchmark_class)
-
+#sapply(file_names, benchmark_class)
+benchmark_class("signal_peptides")
