@@ -25,12 +25,14 @@ load(paste0(pathway, "all_oc.RData"))
 
 all_oc_seqs <- do.call(cbind, pblapply(file_names, function(single_file) {
   load(paste0(pathway, single_file, ".RData"))
-  as.simple_triplet_matrix(vapply(seqs, function(single_seq) {
+  write.csv2(vapply(seqs, function(single_seq) {
     oc <- strsplit(attr(single_seq, "OC"), "; ")[[1]][-1]
     oc[length(oc)] <- sub(".", "", oc[length(oc)], fixed = TRUE)
     #c(attr(single_seq, "OS"))
     all_oc %in% oc
-  }, rep(TRUE, length(all_oc))))
+  }, rep(TRUE, length(all_oc))), 
+  file = paste0(pathway, single_file, "oc.csv"))
+  0
 }))
 
 write.csv2(as.matrix(all_oc_seqs), file = paste0(pathway, "all_oc_seqs.csv"))
