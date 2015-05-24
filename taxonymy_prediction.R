@@ -19,6 +19,7 @@ all_oc <- unique(unlist(pblapply(file_names, function(single_file) {
   sub(".", "", oc, fixed = TRUE)
 })))
 
+save(all_oc, file = paste0(pathway, "all_oc.RData"))
 
 all_oc_seqs <- pblapply(file_names, function(single_file) {
   load(paste0(pathway, single_file, ".RData"))
@@ -27,7 +28,7 @@ all_oc_seqs <- pblapply(file_names, function(single_file) {
     oc[length(oc)] <- sub(".", "", oc[length(oc)], fixed = TRUE)
     #c(attr(single_seq, "OS"))
     all_oc %in% oc
-  }, TRUE))
+  }, rep(TRUE, length(all_oc)))
 })
 
 write.csv2(all_oc_seqs, file = paste0(pathway, "all_oc_seqs.csv"))
