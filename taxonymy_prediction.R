@@ -5,7 +5,7 @@ if(Sys.info()["nodename"] == "MICHALKOMP" )
   pathway <- "D:/michal/doktorat/grant_data/signal_peptides/"
 
 if(Sys.info()["nodename"] == "phobos" )
-  pathway <- "/Qnap/Publikacje/signal_peptides"
+  pathway <- "/Qnap/Publikacje/signal_peptides/"
 
 #os <- sapply(seqs, function(i) attr(i, "OS"))
 
