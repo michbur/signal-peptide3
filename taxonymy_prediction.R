@@ -1,17 +1,13 @@
 library(pbapply)
 library(slam)
 
-
-
 if(Sys.info()["nodename"] == "MICHALKOMP" )
   pathway <- "D:/michal/doktorat/grant_data/signal_peptides/"
 
 if(Sys.info()["nodename"] == "phobos" )
   pathway <- "/Qnap/Publikacje/signal_peptides"
 
-
 #os <- sapply(seqs, function(i) attr(i, "OS"))
-
 
 file_names <- c(paste0("nonsignal_peptides", 1L:9), "signal_peptides")
 
