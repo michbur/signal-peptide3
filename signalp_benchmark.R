@@ -15,7 +15,7 @@ if(Sys.info()["nodename"] == "phobos" )
 # all_lines <- readLines(paste0(pathway, "nonsignal_peptides.txt"))
 # prot_ids <- grep("\\<ID   ", all_lines)
 # border_ids <- round(seq(1L, 152185, length.out = 10), 0)
-# 
+# #stupid idea, seq sets will be so uneven, but sigh
 # sapply(1L:(length(border_ids) - 1), function(i)
 #   writeLines(all_lines[prot_ids[border_ids[i]]:(prot_ids[border_ids[i + 1]] - 1)], 
 #              con = paste0(pathway, "nonsignal_peptides", i, ".txt")))

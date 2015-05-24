@@ -52,24 +52,54 @@ load(paste0(pathway, "all_oc.RData"))
 
 signalHsmm_preds <- pblapply(file_names, function(single_file) {
   read.csv2(paste0(pathway, single_file, "signalHsmm.csv"))[, "sp.probability"]
-})
+})[-c(2, 3, 5)]
 
 signalP_preds <- pblapply(file_names, function(single_file) {
   read_signalp41(paste0(pathway, single_file, ".short_out"))[["sp.probability"]]
-})
+})[-c(2, 3, 5)]
 
 real_labels_len <- pbsapply(file_names, function(single_file) {
   nrow(read.csv2(paste0(pathway, single_file, "signalHsmm.csv")))
 })
 
-real_labels <- c(rep(FALSE, sum(real_labels_len[1L:9])), rep(TRUE, real_labels_len[10]))
+real_labels <- c(rep(FALSE, sum(real_labels_len[1L:9][-c(2, 3, 5)])), 
+                 rep(TRUE, real_labels_len[10]))
 
-os <- unlist(pblapply(file_names, function(single_file) {
+os <- pblapply(file_names, function(single_file) {
   load(paste0(pathway, single_file, ".RData"))
   sapply(seqs, function(i) attr(i, "OS"))
-}))
+})[-c(2, 3, 5)]
 
-data.frame(signalHsmm = signalHsmm_preds,
-           signalP = signalP_preds,
-           real = real_labels,
-           os = os)
+os_pred <- data.frame(signalHsmm = unlist(signalHsmm_preds),
+                      signalP = unlist(signalP_preds),
+                      real = unlist(real_labels),
+                      os = unlist(os))
+
+library(dplyr)
+library(hmeasure)
+
+
+
+os_metrics <- lapply(levels(os_pred[["os"]]), function(i) {
+  dat <- os_pred[os_pred[["os"]] == i, ]
+  both <- length(unique(dat[, "real"])) == 2
+  if(both) {
+    HMeasure(dat[["real"]], dat[, c("signalHsmm", "signalP")])[["metrics"]]
+  } else {
+    NULL
+  }
+})
+  
+os_counts <- as.data.frame(table(os_pred[["os"]]))[!sapply(os_metrics, is.null), ]
+#proper os metrics
+os_pmetrics <- os_metrics[!sapply(os_metrics, is.null)]
+
+os_AUC <- data.frame(os_counts, t(sapply(os_pmetrics, function(i) i[, "AUC"])))
+colnames(os_AUC) <- c("OS", "Count", "signalHsmm", "signalP")
+os_AUC <- cbind(os_AUC, diff = os_AUC[, "signalHsmm"] - os_AUC[, "signalP"])
+os_AUC <- os_AUC[os_AUC[, "Count"] > 50, ]
+os_AUC <- os_AUC[order(os_AUC[, "diff"], decreasing = TRUE), ]
+write.csv2(os_AUC, file = "os_AUC.csv")
+
+
+length(read.fasta(paste0(pathway, "nonsignal_peptides2.fasta")))
