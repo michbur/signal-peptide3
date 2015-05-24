@@ -23,7 +23,7 @@ file_names <- c(paste0("nonsignal_peptides", 1L:9), "signal_peptides")
 
 load(paste0(pathway, "all_oc.RData"))
 
-all_oc_seqs <- do.call(cbind, pblapply(file_names, function(single_file) {
+all_oc_seqs <- pblapply(file_names, function(single_file) {
   load(paste0(pathway, single_file, ".RData"))
   write.csv2(vapply(seqs, function(single_seq) {
     oc <- strsplit(attr(single_seq, "OC"), "; ")[[1]][-1]
@@ -33,6 +33,5 @@ all_oc_seqs <- do.call(cbind, pblapply(file_names, function(single_file) {
   }, rep(TRUE, length(all_oc))), 
   file = paste0(pathway, single_file, "oc.csv"))
   0
-}))
+})
 
-write.csv2(as.matrix(all_oc_seqs), file = paste0(pathway, "all_oc_seqs.csv"))
