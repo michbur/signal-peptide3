@@ -9,26 +9,32 @@
 #negative data set, 152,185 proteins
 #QNAP file nonsignal_peptides.txt
 
+
+if(Sys.info()["nodename"] == "MICHALKOMP" )
+  pathway <- "D:/michal/doktorat/grant_data/signal_peptides/"
+
+
 if(Sys.info()["nodename"] == "phobos" )
   pathway <- "/Qnap/Publikacje/signal_peptides/"
 
-# all_lines <- readLines(paste0(pathway, "nonsignal_peptides.txt"))
-# prot_ids <- grep("\\<ID   ", all_lines)
-# border_ids <- round(seq(1L, 152185, length.out = 10), 0)
-# #stupid idea, seq sets will be so uneven, but sigh
-# sapply(1L:(length(border_ids) - 1), function(i)
-#   writeLines(all_lines[prot_ids[border_ids[i]]:(prot_ids[border_ids[i + 1]] - 1)], 
-#              con = paste0(pathway, "nonsignal_peptides", i, ".txt")))
+all_lines <- readLines(paste0(pathway, "nonsignal_peptides.txt"))
+prot_ids <- grep("\\<ID   ", all_lines)
+
+
+library(cvTools)
+n_splits <- 20
+splits <- cvFolds(length(prot_ids), K = n_splits, type = "consecutive")[["which"]]
+
+sapply(1L:n_splits, function(i)
+  writeLines(all_lines[(prot_ids[splits == i][1]):((prot_ids[splits == i + 1][1]) - 1)], 
+             con = paste0(pathway, "nonsignal_peptides", i, ".txt")))
 
 library(signalHsmm)
 library(seqinr)
 
 source("signalp_benchmark_fun.R")
 
-file_names <- c("nonsignal_peptides10", "nonsignal_peptides1", "nonsignal_peptides2", 
-  "nonsignal_peptides3", "nonsignal_peptides4", "nonsignal_peptides5", 
-  "nonsignal_peptides6", "nonsignal_peptides7", "nonsignal_peptides8", 
-  "nonsignal_peptides9", "signal_peptides")
+file_names <- paste0("nonsignal_peptides", 1L:n_splits)
 
-#sapply(file_names, benchmark_class)
-benchmark_class("signal_peptides")
+sapply(file_names, benchmark_class)
+#benchmark_class("signal_peptides")
