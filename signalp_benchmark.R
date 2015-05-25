@@ -23,7 +23,8 @@ prot_ids <- grep("\\<ID   ", all_lines)
 
 library(cvTools)
 n_splits <- 20
-splits <- cvFolds(length(prot_ids), K = n_splits, type = "consecutive")[["which"]]
+splits <- c(cvFolds(length(prot_ids), K = n_splits, type = "consecutive")[["which"]], n_splits + 1)
+prot_ids <- c(prot_ids, length(all_lines))
 
 sapply(1L:n_splits, function(i)
   writeLines(all_lines[(prot_ids[splits == i][1]):((prot_ids[splits == (i + 1)][1]) - 1)], 
