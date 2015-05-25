@@ -26,7 +26,7 @@ n_splits <- 20
 splits <- cvFolds(length(prot_ids), K = n_splits, type = "consecutive")[["which"]]
 
 sapply(1L:n_splits, function(i)
-  writeLines(all_lines[(prot_ids[splits == i][1]):((prot_ids[splits == i + 1][1]) - 1)], 
+  writeLines(all_lines[(prot_ids[splits == i][1]):((prot_ids[splits == (i + 1)][1]) - 1)], 
              con = paste0(pathway, "nonsignal_peptides", i, ".txt")))
 
 library(signalHsmm)
