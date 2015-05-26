@@ -23,7 +23,7 @@ read_signalp41 <- function(connection) {
 
 #
 
-file_names <- c(paste0("nonsignal_peptides", 1L:9), "signal_peptides")
+file_names <- c(paste0("nonsignal_peptides", 1L:20), "signal_peptides")
 
 all_oc <- unique(unlist(pblapply(file_names, function(single_file) {
   load(paste0(pathway, single_file, ".RData"))
