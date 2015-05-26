@@ -52,23 +52,23 @@ load(paste0(pathway, "all_oc.RData"))
 
 signalHsmm_preds <- pblapply(file_names, function(single_file) {
   read.csv2(paste0(pathway, single_file, "signalHsmm.csv"))[, "sp.probability"]
-})[-c(2, 3, 5)]
+})
 
 signalP_preds <- pblapply(file_names, function(single_file) {
   read_signalp41(paste0(pathway, single_file, ".short_out"))[["sp.probability"]]
-})[-c(2, 3, 5)]
+})
 
 real_labels_len <- pbsapply(file_names, function(single_file) {
   nrow(read.csv2(paste0(pathway, single_file, "signalHsmm.csv")))
 })
 
-real_labels <- c(rep(FALSE, sum(real_labels_len[1L:9][-c(2, 3, 5)])), 
-                 rep(TRUE, real_labels_len[10]))
+real_labels <- c(rep(FALSE, sum(real_labels_len[1L:20])), 
+                 rep(TRUE, real_labels_len[21]))
 
 os <- pblapply(file_names, function(single_file) {
   load(paste0(pathway, single_file, ".RData"))
   sapply(seqs, function(i) attr(i, "OS"))
-})[-c(2, 3, 5)]
+})
 
 os_pred <- data.frame(signalHsmm = unlist(signalHsmm_preds),
                       signalP = unlist(signalP_preds),
