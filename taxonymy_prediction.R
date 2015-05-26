@@ -25,15 +25,15 @@ read_signalp41 <- function(connection) {
 
 file_names <- c(paste0("nonsignal_peptides", 1L:20), "signal_peptides")
 
-all_oc <- unique(unlist(pblapply(file_names, function(single_file) {
-  load(paste0(pathway, single_file, ".RData"))
-  #just to remove Eukaryota from each oc
-  oc <- unique(unlist(sapply(strsplit(sapply(seqs, function(i) attr(i, "OC")), "; "), 
-                             function(i) i[-1])))
-  sub(".", "", oc, fixed = TRUE)
-})))
-
-save(all_oc, file = paste0(pathway, "all_oc.RData"))
+# all_oc <- unique(unlist(pblapply(file_names, function(single_file) {
+#   load(paste0(pathway, single_file, ".RData"))
+#   #just to remove Eukaryota from each oc
+#   oc <- unique(unlist(sapply(strsplit(sapply(seqs, function(i) attr(i, "OC")), "; "), 
+#                              function(i) i[-1])))
+#   sub(".", "", oc, fixed = TRUE)
+# })))
+# 
+# save(all_oc, file = paste0(pathway, "all_oc.RData"))
 
 load(paste0(pathway, "all_oc.RData"))
 
@@ -97,9 +97,7 @@ os_pmetrics <- os_metrics[!sapply(os_metrics, is.null)]
 os_AUC <- data.frame(os_counts, t(sapply(os_pmetrics, function(i) i[, "AUC"])))
 colnames(os_AUC) <- c("OS", "Count", "signalHsmm", "signalP")
 os_AUC <- cbind(os_AUC, diff = os_AUC[, "signalHsmm"] - os_AUC[, "signalP"])
-os_AUC <- os_AUC[os_AUC[, "Count"] > 50, ]
 os_AUC <- os_AUC[order(os_AUC[, "diff"], decreasing = TRUE), ]
+write.csv2(os_AUC[os_AUC[, "Count"] > 50, ], file = "os_AUC50.csv")
 write.csv2(os_AUC, file = "os_AUC.csv")
 
-
-length(read.fasta(paste0(pathway, "nonsignal_peptides2.fasta")))
