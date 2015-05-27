@@ -86,7 +86,7 @@ os_pred <- data.frame(signalHsmm = unlist(signalHsmm_preds),
                       os = unlist(os),
                       oc = unlist(oc))
 
-write.csv2(os_pred, file = "osoc_pred.csv")
+write.csv2(os_pred, file = paste0(pathway, "osoc_pred.csv"))
 
 library(dplyr)
 library(hmeasure)
