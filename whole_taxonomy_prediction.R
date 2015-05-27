@@ -13,10 +13,10 @@ if(Sys.info()["nodename"] == "phobos" )
 oc_pred <- read.csv2(file = paste0(pathway, "osoc_pred.csv"))
 
 #-1 to remove Eukaryota
-unique_ocs <- unique(unlist(strsplit(as.character(os_pred[["oc"]]), "; ")))[-1]
+unique_ocs <- unique(unlist(strsplit(as.character(oc_pred[["oc"]]), "; ")))[-1]
 
 full_oc_metrics <- pblapply(unique_ocs, function(single_oc) {
-  dat <- os_pred[grepl(single_oc, os_pred[["oc"]]), c("signalHsmm", "signalP", "real")]
+  dat <- oc_pred[grepl(single_oc, oc_pred[["oc"]]), c("signalHsmm", "signalP", "real")]
   both <- length(unique(dat[, "real"])) == 2
   if(both) {
     HMeasure(dat[["real"]], dat[, c("signalHsmm", "signalP")])[["metrics"]]
