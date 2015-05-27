@@ -70,10 +70,23 @@ os <- pblapply(file_names, function(single_file) {
   sapply(seqs, function(i) attr(i, "OS"))
 })
 
+os <- pblapply(file_names, function(single_file) {
+  load(paste0(pathway, single_file, ".RData"))
+  sapply(seqs, function(i) attr(i, "OS"))
+})
+
+oc <- pblapply(file_names, function(single_file) {
+  load(paste0(pathway, single_file, ".RData"))
+  sapply(seqs, function(i) attr(i, "OC"))
+})
+
 os_pred <- data.frame(signalHsmm = unlist(signalHsmm_preds),
                       signalP = unlist(signalP_preds),
                       real = unlist(real_labels),
-                      os = unlist(os))
+                      os = unlist(os),
+                      oc = unlist(oc))
+
+write.csv2(os_pred, file = "osoc_pred.csv")
 
 library(dplyr)
 library(hmeasure)
