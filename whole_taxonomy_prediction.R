@@ -26,17 +26,22 @@ full_oc_metrics <- pblapply(unique_ocs, function(single_oc) {
   what = single_oc)
 })
 
-save(full_oc_metrics, unique_ocs, oc_counts, file = "/home/michal/Dropbox/signal-peptide2_data/whole_taxonomy_snap.RData")
+#save(full_oc_metrics, unique_ocs, oc_counts, file = "/home/michal/Dropbox/signal-peptide2_data/whole_taxonomy_snap.RData")
 
-oc_counts <- pbsapply(unique_ocs, function(single_oc)
-  sum(grepl(single_oc, oc_pred[["oc"]])))
-  
-# #proper oc metrics
-# oc_pmetrics <- full_oc_metrics[!sapply(full_oc_metrics, is.null)]
-# 
-# oc_AUC <- data.frame(names(oc_counts), oc_counts, t(sapply(oc_pmetrics, function(i) i[, "AUC"])))
-# colnames(oc_AUC) <- c("OC", "Count", "signalHsmm", "signalP")
-# oc_AUC <- cbind(oc_AUC, diff = oc_AUC[, "signalHsmm"] - oc_AUC[, "signalP"])
-# oc_AUC <- oc_AUC[order(oc_AUC[, "diff"], decreasing = TRUE), ]
-# write.csv2(oc_AUC[oc_AUC[, "Count"] > 50, ], file = paste0(pathway, "oc_AUC50.csv"))
-# write.csv2(oc_AUC, file = paste0(pathway, "oc_AUC.csv"))
+load(file = paste0(pathway, "whole_taxonomy_snap.RData"))
+
+informative <- !sapply(full_oc_metrics, function(i) is.null(i[["metrics"]]))
+
+oc_AUC <- data.frame(unique_ocs[informative], t(sapply(full_oc_metrics[informative], function(i)
+  c(i[["count"]], i[["metrics"]][, "AUC"])
+)))
+
+colnames(oc_AUC) <- c("OC", "Count", "signalHsmm", "signalP")
+oc_AUC <- cbind(oc_AUC, diff = oc_AUC[, "signalHsmm"] - oc_AUC[, "signalP"])
+oc_AUC <- oc_AUC[order(oc_AUC[, "diff"], decreasing = TRUE), ]
+write.csv2(oc_AUC[oc_AUC[, "Count"] > 50, ], file = paste0(pathway, "oc_AUC50.csv"))
+write.csv2(oc_AUC, file = paste0(pathway, "oc_AUC.csv"))
+
+
+plot(oc_AUC[["Count"]], oc_AUC[["diff"]])
+
