@@ -28,9 +28,9 @@ full_oc_metrics <- pblapply(unique_ocs, function(single_oc) {
   what = single_oc)
 })
 
-#save(full_oc_metrics, unique_ocs, oc_counts, file = "/home/michal/Dropbox/signal-peptide2_data/whole_taxonomy_snap.RData")
+save(full_oc_metrics, unique_ocs, oc_counts, file = "/home/michal/Dropbox/signal-peptide2_data/whole_taxonomy_snap.RData")
 
-load(file = paste0(pathway, "whole_taxonomy_snap.RData"))
+#load(file = paste0(pathway, "whole_taxonomy_snap.RData"))
 
 informative <- !sapply(full_oc_metrics, function(i) is.null(i[["metrics"]]))
 
@@ -50,6 +50,4 @@ oc_AUC <- oc_AUC[order(oc_AUC[, "diff"], decreasing = TRUE), ]
 write.csv2(oc_AUC[oc_AUC[, "Count"] > 50, ], file = paste0(pathway, "oc_AUC50.csv"))
 write.csv2(oc_AUC, file = paste0(pathway, "oc_AUC.csv"))
 
-
-plot(oc_AUC[["Count"]], oc_AUC[["diff"]])
 
