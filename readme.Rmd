@@ -24,7 +24,23 @@ known_files <- list(readme = list(file_name = "readme.Rmd",
                     kmer_prediction = list(file_name = "kmer_cs_prediction.R",
                                           descr = "Adding n-gram to hsmm to predict cleavage site more accurately."),
                     cs_ngrams_dat = list(file_name = "cs_ngrams.RData",
-                                          descr = "Data created by cs_ngrams.R")
+                                          descr = "Data created by cs_ngrams.R"),
+                    os_AUC50 = list(file_name = "os_AUC50.csv",
+                                          descr = "AUC for different species (only species with 50 and more sequences"),
+                    os_AUC = list(file_name = "os_AUC.csv",
+                                          descr = "AUC for different species. Created by taxonomy_prediction.R"),
+                    plasmodium_k_mers_signalHsmm.html = list(file_name = "plasmodium_k_mers_signalHsmm.html",
+                                          descr = "Parsed plasmodium_k_mers_signalHsmm.Rmd"),
+                    plasmodium_k_mers_signalHsmm.Rmd = list(file_name = "plasmodium_k_mers_signalHsmm.Rmd",
+                                          descr = "Report: incorporating n-grams to obtain more precise predictions of the cleavage site for Plasmodiidae."),
+                    signalHsmm_with_k_mers.html = list(file_name = "signalHsmm_with_k_mers.html",
+                                          descr = "Parsed signalHsmm_with_k_mers.Rmd"),
+                    signalHsmm_with_k_mers.Rmd = list(file_name = "signalHsmm_with_k_mers.Rmd",
+                                          descr = "Report: incorporating n-grams to obtain more precise predictions of the cleavage site."),
+                    signalp_benchmark_fun = list(file_name = "signalp_benchmark_fun.R",
+                                          descr = "Set of functions to benchmark signalHsmm versus signalP."),
+                    signalp_benchmark = list(file_name = "signalp_benchmark.R",
+                                          descr = "Benchmark of signalHsmm and signalP on all SPs from UniProt (Data downloaded in June 2015).")
 )
 
 known_files_names <- sapply(known_files, function(i) i[["file_name"]])

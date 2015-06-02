@@ -1,12 +1,17 @@
 Readme
 ========================================================
 
-Date: maj 13 2015
+Date: czerwiec 02 2015
 
 ### List of files
 
+
+```
+## Michal, you slacker! File(s): taxonomy_plots.R, taxonymy_prediction.R, whole_taxonomy_prediction.R do not have a proper description.
+```
+
 <!-- html table generated in R 3.2.0 by xtable 1.7-4 package -->
-<!-- Wed May 13 09:38:00 2015 -->
+<!-- Tue Jun  2 14:23:27 2015 -->
 <table border=1>
 <tr> <th> File name </th> <th> Description </th> <th> Sourced files </th>  </tr>
   <tr> <td> cs_analysis.R </td> <td> Analysis of cleavage sites amino acid composition. </td> <td> start.R </td> </tr>
@@ -14,8 +19,16 @@ Date: maj 13 2015
   <tr> <td> cs_ngrams.R </td> <td> Important n-gram in cleavage sites. </td> <td> start.R </td> </tr>
   <tr> <td> cs_ngrams.RData </td> <td> Data created by cs_ngrams.R </td> <td>  </td> </tr>
   <tr> <td> kmer_cs_prediction.R </td> <td> Adding n-gram to hsmm to predict cleavage site more accurately. </td> <td> start.R </td> </tr>
+  <tr> <td> os_AUC50.csv </td> <td> AUC for different species (only species with 50 and more sequences </td> <td>  </td> </tr>
+  <tr> <td> os_AUC.csv </td> <td> AUC for different species. Created by taxonomy_prediction.R </td> <td>  </td> </tr>
+  <tr> <td> plasmodium_k_mers_signalHsmm.html </td> <td> Parsed plasmodium_k_mers_signalHsmm.Rmd </td> <td>  </td> </tr>
+  <tr> <td> plasmodium_k_mers_signalHsmm.Rmd </td> <td> Report: incorporating n-grams to obtain more precise predictions of the cleavage site for Plasmodiidae. </td> <td>  </td> </tr>
   <tr> <td> readme.md </td> <td> Parsed readme.Rmd </td> <td>  </td> </tr>
   <tr> <td> readme.Rmd </td> <td> A template for automatically generated readme. Date and list of file included. </td> <td>  </td> </tr>
+  <tr> <td> signalHsmm_with_k_mers.html </td> <td> Parsed signalHsmm_with_k_mers.Rmd </td> <td>  </td> </tr>
+  <tr> <td> signalHsmm_with_k_mers.Rmd </td> <td> Report: incorporating n-grams to obtain more precise predictions of the cleavage site. </td> <td>  </td> </tr>
+  <tr> <td> signalp_benchmark_fun.R </td> <td> Set of functions to benchmark signalHsmm versus signalP. </td> <td>  </td> </tr>
+  <tr> <td> signalp_benchmark.R </td> <td> Benchmark of signalHsmm and signalP on all SPs from UniProt (Data downloaded in June 2015). </td> <td> signalp_benchmark_fun.R </td> </tr>
   <tr> <td> start.R </td> <td> All packages, variables and so on universally needed for the research. Should be sourced every time. </td> <td>  </td> </tr>
    </table>
 
