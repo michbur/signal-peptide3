@@ -1,3 +1,4 @@
+#what means manual evidence? look: file:///home/michal/Pobrane/sop_manual_curation.pdf
 #taxonomy:"Eukaryota [2759]" annotation:(type:signal evidence:manual) AND reviewed:yes
 #read and filter data --------------------------------------------------
 
@@ -9,6 +10,10 @@
 #negative data set, 152,185 proteins
 #QNAP file nonsignal_peptides.txt
 
+#I should also try
+#taxonomy:"Eukaryota [2759]" annotation:(type:signal evidence:ECO_0000269) AND reviewed:yes
+#http://www.uniprot.org/help/2014/10/01/release
+#QNAP file experimental_signal_peptides.txt
 
 if(Sys.info()["nodename"] == "MICHALKOMP" )
   pathway <- "D:/michal/doktorat/grant_data/signal_peptides/"
