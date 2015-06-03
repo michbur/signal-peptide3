@@ -1,17 +1,12 @@
 Readme
 ========================================================
 
-Date: czerwiec 02 2015
+Date: czerwiec 03 2015
 
 ### List of files
 
-
-```
-## Michal, you slacker! File(s): taxonomy_plots.R, taxonymy_prediction.R, whole_taxonomy_prediction.R do not have a proper description.
-```
-
 <!-- html table generated in R 3.2.0 by xtable 1.7-4 package -->
-<!-- Tue Jun  2 14:23:27 2015 -->
+<!-- Wed Jun  3 15:32:26 2015 -->
 <table border=1>
 <tr> <th> File name </th> <th> Description </th> <th> Sourced files </th>  </tr>
   <tr> <td> cs_analysis.R </td> <td> Analysis of cleavage sites amino acid composition. </td> <td> start.R </td> </tr>
@@ -30,6 +25,9 @@ Date: czerwiec 02 2015
   <tr> <td> signalp_benchmark_fun.R </td> <td> Set of functions to benchmark signalHsmm versus signalP. </td> <td>  </td> </tr>
   <tr> <td> signalp_benchmark.R </td> <td> Benchmark of signalHsmm and signalP on all SPs from UniProt (Data downloaded in June 2015). </td> <td> signalp_benchmark_fun.R </td> </tr>
   <tr> <td> start.R </td> <td> All packages, variables and so on universally needed for the research. Should be sourced every time. </td> <td>  </td> </tr>
+  <tr> <td> taxonomy_plots.R </td> <td> Plot which species are recognised by signalHsmm. </td> <td>  </td> </tr>
+  <tr> <td> taxonymy_prediction.R </td> <td> signalP and signalHsmm predictions for different species </td> <td>  </td> </tr>
+  <tr> <td> whole_taxonomy_prediction.R </td> <td> signalP and signalHsmm predictions for all eukaryotic taxonomic groups (not species). </td> <td>  </td> </tr>
    </table>
 
 ### Repository rules

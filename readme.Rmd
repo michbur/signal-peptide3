@@ -40,7 +40,13 @@ known_files <- list(readme = list(file_name = "readme.Rmd",
                     signalp_benchmark_fun = list(file_name = "signalp_benchmark_fun.R",
                                           descr = "Set of functions to benchmark signalHsmm versus signalP."),
                     signalp_benchmark = list(file_name = "signalp_benchmark.R",
-                                          descr = "Benchmark of signalHsmm and signalP on all SPs from UniProt (Data downloaded in June 2015).")
+                                          descr = "Benchmark of signalHsmm and signalP on all SPs from UniProt (Data downloaded in June 2015)."),
+                    taxonomy_plots = list(file_name = "taxonomy_plots.R",
+                                          descr = "Plot which species are recognised by signalHsmm."),
+                    taxonymy_prediction = list(file_name = "taxonymy_prediction.R",
+                                          descr = "signalP and signalHsmm predictions for different species"),
+                    whole_taxonomy_prediction = list(file_name = "whole_taxonomy_prediction.R",
+                                          descr = "signalP and signalHsmm predictions for all eukaryotic taxonomic groups (not species).")
 )
 
 known_files_names <- sapply(known_files, function(i) i[["file_name"]])
