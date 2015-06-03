@@ -10,8 +10,8 @@ osoc <- read.csv2(paste0(pathway, "osoc_pred.csv"))
 
 sp_counts <-data.frame(table(osoc[osoc[["real"]], "os"]))
 
-os_AUC50 <- read.csv2("os_AUC50.csv")[, "OS"]
+os_AUC50 <- read.csv2("os_AUC.csv")[, "OS"]
 
 sp_counts <- sp_counts[sp_counts[, 1] %in% os_AUC50, ]
 
-write.csv2(sp_counts, file = "os_AUC59_counts.csv")
+write.csv2(sp_counts, file = "os_AUC50_counts.csv")
