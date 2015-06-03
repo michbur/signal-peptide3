@@ -1,354 +1,354 @@
-"";"OS";"Count";"signalHsmm";"signalP";"diff"
-"3534";"Phaeodactylum tricornutum.";98;1;0,5;0,5
-"4824";"Trypanosoma cruzi (strain CL Brener).";142;1;0,50354609929078;0,49645390070922
-"1098";"Coffea arabica (Arabian coffee).";127;0,992063492063492;0,5;0,492063492063492
-"4954";"Vigna radiata var. radiata (Mung bean) (Phaseolus aureus).";53;0,980769230769231;0,5;0,480769230769231
-"1225";"Crithidia fasciculata.";59;0,896551724137931;0,5;0,396551724137931
-"632";"Brassica oleracea (Wild cabbage).";51;1;0,666666666666667;0,333333333333333
-"4772";"Trichoplax adhaerens (Trichoplax reptans).";111;0,818181818181818;0,5;0,318181818181818
-"1325";"Cucumis sativus (Cucumber).";271;0,777777777777778;0,5;0,277777777777778
-"1332";"Culex quinquefasciatus (Southern house mosquito) (Culex pungens).";507;1;0,75;0,25
-"3688";"Plasmodium falciparum.";118;1;0,75;0,25
-"3704";"Plasmodium falciparum (isolate K1 / Thailand).";105;1;0,75;0,25
-"3729";"Plasmodium vivax (strain Salvador I).";103;0,910891089108911;0,660891089108911;0,25
-"3690";"Plasmodium falciparum (isolate 3D7).";428;0,938574938574939;0,737334737334737;0,201240201240201
-"3680";"Plasmodium berghei (strain Anka).";72;0,946969696969697;0,75;0,196969696969697
-"1463";"Dianthus caryophyllus (Carnation) (Clove pink).";129;1;0,833333333333333;0,166666666666667
-"1593";"Drosophila mojavensis (Fruit fly).";647;0,971841052029731;0,818181818181818;0,153659233847913
-"4653";"Theileria annulata.";99;0,9;0,75;0,15
-"279";"Aplysia californica (California sea hare).";65;0,908;0,76;0,148
-"2914";"Musca domestica (House fly).";56;0,955974842767296;0,823899371069182;0,132075471698113
-"4202";"Scheffersomyces stipitis (strain ATCC 58785 / CBS 6054 / NBRC 10063 / NRRL Y-11545) (Yeast) (Pichia stipitis).";996;0,992439516129032;0,875;0,117439516129032
-"4070";"Ricinus communis (Castor bean).";181;0,992052023121387;0,875;0,117052023121387
-"3525";"Petunia hybrida (Petunia).";248;0,969547325102881;0,865020576131687;0,104526748971193
-"1629";"Drosophila willistoni (Fruit fly).";661;0,99958041958042;0,896013986013986;0,103566433566434
-"3730";"Plasmodium yoelii yoelii.";97;1;0,916666666666667;0,0833333333333334
-"119";"Alligator mississippiensis (American alligator).";122;1;0,917355371900826;0,0826446280991735
-"1081";"Coccidioides immitis (strain RS) (Valley fever fungus).";1071;0,997183098591549;0,916197183098592;0,0809859154929577
-"1604";"Drosophila persimilis (Fruit fly).";635;0,995948136142626;0,916666666666667;0,0792814694759589
-"83";"Ailuropoda melanoleuca (Giant panda).";165;0,986486486486487;0,908386327503975;0,078100158982512
-"642";"Brugia malayi (Filarial nematode worm).";254;0,953;0,875;0,078
-"1627";"Drosophila virilis (Fruit fly).";928;0,986002408187839;0,909090909090909;0,0769114990969296
-"1569";"Drosophila grimshawi (Fruit fly) (Idiomyia grimshawi).";650;0,919699011680144;0,842991913746631;0,076707097933513
-"2373";"Leishmania major.";224;0,565022421524664;0,5;0,0650224215246638
-"928";"Chaetomium globosum (strain ATCC 6205 / CBS 148.51 / DSM 1962 / NBRC 6347 / NRRL 1970) (Soil fungus).";975;0,935633367662204;0,873455200823893;0,062178166838311
-"4948";"Vicia faba (Broad bean) (Faba vulgaris).";151;0,97816091954023;0,916666666666667;0,0614942528735632
-"1609";"Drosophila pseudoobscura pseudoobscura (Fruit fly).";1302;0,995152559055118;0,936712598425197;0,0584399606299213
-"1543";"Drosophila ananassae (Fruit fly).";698;0,993126832844575;0,9375;0,0556268328445748
-"2525";"Lottia gigantea (Giant owl limpet).";51;1;0,944444444444444;0,0555555555555556
-"2502";"Lodderomyces elongisporus (strain ATCC 11503 / CBS 2605 / JCM 1781 / NBRC 1676 / NRRL YB-4239) (Yeast) (Saccharomyces elongisporus).";781;0,983880253310305;0,932138744962579;0,051741508347726
-"5002";"Xenopus tropicalis (Western clawed frog) (Silurana tropicalis).";5491;0,965353341634494;0,915235081374322;0,0501182602601726
-"2761";"Meyerozyma guilliermondii (strain ATCC 6260 / CBS 566 / DSM 6381 / JCM 1539 / NBRC 10279 / NRRL Y-324) (Yeast) (Candida guilliermondii).";935;0,983321334293257;0,93364530837533;0,0496760259179265
-"2285";"Kluyveromyces lactis (strain ATCC 8585 / CBS 2359 / DSM 70799 / NBRC 1267 / NRRL Y-1140 / WM37) (Yeast) (Candida sphaerica).";3067;0,961635090609555;0,913967257001647;0,0476678336079077
-"1704";"Entamoeba histolytica.";183;0,996828752642706;0,951638477801269;0,0451902748414376
-"307";"Arabidopsis thaliana (Mouse-ear cress).";45143;0,973245593106294;0,928781774412157;0,0444638186941365
-"2370";"Leishmania donovani.";137;0,544117647058824;0,5;0,0441176470588236
-"1427";"Daucus carota (Wild carrot).";406;0,84280303030303;0,798737373737374;0,0440656565656565
-"599";"Botryotinia fuckeliana (strain B05.10) (Noble rot fungus) (Botrytis cinerea).";672;0,955955955955956;0,915165165165165;0,0407907907907907
-"1404";"Danio rerio (Zebrafish) (Brachydanio rerio).";9519;0,960078864417631;0,919607227471241;0,0404716369463892
-"4052";"Rhizopus delemar (strain RA 99-880 / ATCC MYA-4621 / FGSC 9543 / NRRL 43880) (Mucormycosis agent) (Rhizopus arrhizus var. delemar).";141;0,984848484848485;0,944444444444444;0,0404040404040404
-"5042";"Zygosaccharomyces rouxii (strain ATCC 2623 / CBS 732 / NBRC 1130 / NCYC 568 / NRRL Y-229) (Candida mogii).";370;0,967729240456513;0,928571428571429;0,0391578118850846
-"678";"Caenorhabditis briggsae.";1720;0,963197346600332;0,924975124378109;0,0382222222222222
-"1429";"Debaryomyces hansenii (strain ATCC 36239 / CBS 767 / JCM 1990 / NBRC 0083 / IGC 2968) (Yeast) (Torulaspora hansenii).";2530;0,957372506595304;0,92079940784604;0,0365730987492645
-"1474";"Dictyostelium discoideum (Slime mold).";10640;0,983437858426876;0,949856451149459;0,0335814072774162
-"2025";"Gossypium hirsutum (Upland cotton) (Gossypium mexicanum).";305;1;0,966666666666667;0,0333333333333333
-"4218";"Schizosaccharomyces pombe (strain 972 / ATCC 24843) (Fission yeast).";12140;0,958574541069453;0,925662954970317;0,032911586099136
-"1564";"Drosophila erecta (Fruit fly).";815;0,998938428874735;0,966666666666667;0,0322717622080679
-"2712";"Meleagris gallopavo (Common turkey).";153;0,948581560283688;0,916666666666667;0,0319148936170213
-"384";"Ashbya gossypii (strain ATCC 10895 / CBS 109.51 / FGSC 9923 / NRRL Y-1056) (Yeast) (Eremothecium gossypii).";3225;0,95350710558588;0,921826532329815;0,0316805732560655
-"750";"Candida glabrata (strain ATCC 2001 / CBS 138 / JCM 3761 / NBRC 0622 / NRRL Y-65) (Yeast) (Torulopsis glabrata).";2990;0,975497560237105;0,947093828972039;0,0284037312650666
-"275";"Apis mellifera (Honeybee).";189;0,995023885350318;0,96875;0,0262738853503185
-"1589";"Drosophila melanogaster (Fruit fly).";11253;0,965932199596542;0,940796086075017;0,0251361135215253
-"5001";"Xenopus laevis (African clawed frog).";11102;0,967370297618467;0,945193919926692;0,0221763776917753
-"1616";"Drosophila simulans (Fruit fly).";802;0,968953634085213;0,952380952380952;0,0165726817042607
-"679";"Caenorhabditis elegans.";9177;0,941010512367537;0,92485073211411;0,0161597802534275
-"3960";"Pyrenophora tritici-repentis (strain Pt-1C-BFP) (Wheat tan spot fungus) (Drechslera tritici-repentis).";186;0,950842696629214;0,934691011235955;0,0161516853932584
-"391";"Aspergillus clavatus (strain ATCC 1007 / CBS 513.65 / DSM 816 / NCTC 3887 / NRRL 1).";1154;0,977507806401249;0,962919594067135;0,014588212334114
-"4097";"Saccharomyces cerevisiae (strain ATCC 204508 / S288c) (Baker's yeast).";16831;0,926535019424959;0,912717022336756;0,0138179970882026
-"1252";"Crotalus adamanteus (Eastern diamondback rattlesnake).";79;0,974358974358974;0,961538461538462;0,0128205128205128
-"3803";"Pongo abelii (Sumatran orangutan) (Pongo pygmaeus abelii).";6965;0,945838892225981;0,934651133381809;0,0111877588441719
-"2650";"Manduca sexta (Tobacco hawkmoth) (Tobacco hornworm).";305;0,99554367201426;0,984848484848485;0,0106951871657753
-"2463";"Limulus polyphemus (Atlantic horseshoe crab).";56;1;0,990196078431373;0,00980392156862742
-"265";"Aotus trivirgatus (Three-striped night monkey) (Douroucouli).";55;0,946808510638298;0,9375;0,00930851063829785
-"1692";"Encephalitozoon cuniculi (strain GB-M1) (Microsporidian parasite).";744;0,96299793956044;0,954326923076923;0,00867101648351642
-"2485";"Lithobates catesbeiana (American bullfrog) (Rana catesbeiana).";197;0,981963335304553;0,973684210526316;0,00827912477823767
-"2249";"Ipomoea batatas (Sweet potato) (Convolvulus batatas).";83;1;0,993243243243243;0,0067567567567568
-"4325";"Solanum lycopersicum (Tomato) (Lycopersicon esculentum).";1016;0,96086508753862;0,954525689438151;0,00633939810046913
-"749";"Candida dubliniensis (strain CD36 / ATCC MYA-646 / CBS 7987 / NCPF 3949 / NRRL Y-17841) (Yeast).";246;0,966804979253112;0,960580912863071;0,00622406639004147
-"3360";"Papio anubis (Olive baboon).";162;0,985205314009662;0,979166666666667;0,0060386473429952
-"3271";"Oryzias latipes (Japanese rice fish) (Japanese killifish).";325;0,963510848126233;0,958333333333333;0,00517751479289941
-"564";"Bombyx mori (Silk moth).";459;0,996839356877834;0,992115569602858;0,00472378727497602
-"1613";"Drosophila sechellia (Fruit fly).";776;0,981914637087051;0,977272727272727;0,00464190981432355
-"3766";"Podospora anserina (Pleurage anserina).";120;1;0,995726495726496;0,00427350427350426
-"352";"Arthroderma benhamiae (strain ATCC MYA-4681 / CBS 112371) (Trichophyton mentagrophytes).";95;0,994545454545455;0,990909090909091;0,00363636363636355
-"1784";"Euglena gracilis.";300;1;0,996655518394649;0,00334448160535117
-"709";"Callithrix jacchus (White-tufted-ear marmoset).";242;0,987853692201518;0,985714285714286;0,00213940648723254
-"3815";"Populus trichocarpa (Western balsam poplar) (Populus balsamifera subsp. trichocarpa).";247;1;0,997942386831276;0,00205761316872433
-"3105";"Nicotiana sylvestris (Wood tobacco) (South American tobacco).";262;1;0,998084291187739;0,00191570881226055
-"4494";"Strongylocentrotus purpuratus (Purple sea urchin).";357;0,862012454932809;0,86086529006883;0,00114716486397914
-"3055";"Nematostella vectensis (Starlet sea anemone).";552;0,999867233138609;0,99907063197026;0,000796601168348343
-"2694";"Medicago sativa (Alfalfa).";130;0,996515679442509;0,995934959349594;0,00058072009291521
-"1913";"Gallus gallus (Chicken).";6247;0,939827661309755;0,939390906226251;0,000436755083504714
-"158";"Ambystoma mexicanum (Axolotl).";65;1;1;0
-"193";"Anguilla anguilla (European freshwater eel) (Muraena anguilla).";74;1;1;0
-"592";"Bothrops moojeni (Lance-headed viper) (Caissaca).";64;1;1;0
-"624";"Brassica campestris (Field mustard).";107;1;1;0
-"692";"Callicebus moloch (Dusky titi monkey).";52;1;1;0
-"770";"Cannabis sativa (Hemp) (Marijuana).";53;1;1;0
-"826";"Catharanthus roseus (Madagascar periwinkle) (Vinca rosea).";164;0,941358024691358;0,941358024691358;0
-"898";"Cerrophidion godmani (Porthidium godmani) (Bothrops godmani).";57;1;1;0
-"1119";"Columba livia (Rock dove).";66;1;1;0
-"1202";"Craterostigma plantagineum (Blue gem) (Torenia plantagineum).";103;1;1;0
-"1253";"Crotalus atrox (Western diamondback rattlesnake).";57;1;1;0
-"1259";"Crotalus durissus terrificus (South American rattlesnake).";94;1;1;0
-"1326";"Cucurbita maxima (Pumpkin) (Winter squash).";54;1;1;0
-"1388";"Daboia russelii (Russel's viper) (Vipera russelii).";88;1;1;0
-"1431";"Deinagkistrodon acutus (Hundred-pace snake) (Agkistrodon acutus).";61;1;1;0
-"1535";"Dromaius novaehollandiae (Emu).";103;1;1;0
-"1643";"Echinococcus granulosus (Hydatid tapeworm).";86;1;1;0
-"1957";"Giardia intestinalis (Giardia lamblia).";106;1;1;0
-"2024";"Gossypium barbadense (Sea-island cotton) (Egyptian cotton).";118;1;1;0
-"2100";"Heliocidaris crassispina (Sea urchin) (Anthocidaris crassispina).";80;1;1;0
-"2130";"Heterodontus francisci (Horn shark) (Cestracion francisci).";62;1;1;0
-"2297";"Komagataella pastoris (Yeast) (Pichia pastoris).";130;1;1;0
-"2352";"Laticauda colubrina (Yellow-lipped sea krait) (Banded sea krait).";65;1;1;0
-"2354";"Laticauda semifasciata (Black-banded sea krait) (Pseudolaticauda semifasciata).";52;1;1;0
-"2457";"Lilium longiflorum (Trumpet lily).";58;1;1;0
-"2626";"Macrovipera lebetina (Levantine viper) (Vipera lebetina).";67;1;1;0
-"2643";"Malus domestica (Apple) (Pyrus malus).";136;1;1;0
-"2873";"Monosiga brevicollis (Choanoflagellate).";185;1;1;0
-"3019";"Naja atra (Chinese cobra).";86;1;1;0
-"3022";"Naja mossambica (Mozambique spitting cobra).";56;1;1;0
-"3122";"Notechis scutatus scutatus (Mainland tiger snake) (Common tiger snake).";92;1;1;0
-"3216";"Oncorhynchus keta (Chum salmon) (Salmo keta).";58;1;1;0
-"3218";"Oncorhynchus masou (Cherry salmon) (Masu salmon).";62;1;1;0
-"3247";"Oreochromis niloticus (Nile tilapia) (Tilapia nilotica).";64;1;1;0
-"3275";"Oscheius tipulae.";71;1;1;0
-"3357";"Papaver somniferum (Opium poppy).";95;1;1;0
-"3679";"Plasmodium berghei.";62;1;1;0
-"3869";"Protobothrops mucrosquamatus (Taiwan habu) (Trimeresurus mucrosquamatus).";60;1;1;0
-"3895";"Pseudechis australis (Mulga snake) (King brown snake).";216;1;1;0
-"3994";"Raphanus sativus (Radish).";115;1;1;0
-"4205";"Schistocerca gregaria (Desert locust).";107;1;1;0
-"4301";"Sminthopsis crassicaudata (Fat-tailed dunnart) (Phascogale crassicaudata).";61;1;1;0
-"4429";"Spermophilus tridecemlineatus (Thirteen-lined ground squirrel) (Ictidomys tridecemlineatus).";65;1;1;0
-"4451";"Spodoptera frugiperda (Fall armyworm).";71;1;1;0
-"4630";"Tetrahymena pyriformis.";79;1;1;0
-"4791";"Trimeresurus gramineus (Bamboo pit viper) (Indian green tree viper).";67;1;1;0
-"4793";"Trimeresurus stejnegeri (Chinese green tree viper) (Viridovipera stejnegeri).";161;1;1;0
-"4823";"Trypanosoma cruzi.";218;1;1;0
-"4845";"Tursiops truncatus (Atlantic bottle-nosed dolphin) (Delphinus truncatus).";52;1;1;0
-"5008";"Xiphophorus maculatus (Southern platyfish) (Platypoecilus maculatus).";58;1;1;0
-"2740";"Mesembryanthemum crystallinum (Common ice plant) (Cryophytum crystallinum).";108;1;1;-1,11022302462516e-16
-"3104";"Nicotiana plumbaginifolia (Leadwort-leaved tobacco) (Tex-Mex tobacco).";110;1;1;-1,11022302462516e-16
-"2586";"Macaca fascicularis (Crab-eating macaque) (Cynomolgus monkey).";2980;0,950709280320971;0,950753485356556;-4,42050355849988e-05
-"997";"Chlorocebus aethiops (Green monkey) (Cercopithecus aethiops).";391;0,959154069323561;0,959459459459459;-0,000305390135898587
-"4333";"Solanum tuberosum (Potato).";715;0,952231404958678;0,953030303030303;-0,000798898071625365
-"3268";"Oryza sativa subsp. japonica (Rice).";8887;0,954535776296352;0,956350273395571;-0,00181449709921921
-"1069";"Clavispora lusitaniae (strain ATCC 42720) (Yeast) (Candida lusitaniae).";182;0,998137802607076;1;-0,0018621973929237
-"4817";"Trypanosoma brucei brucei.";443;0,80948275862069;0,811350574712644;-0,00186781609195408
-"2697";"Medicago truncatula (Barrel medic) (Medicago tribuloides).";223;0,997923156801661;1;-0,00207684319833867
-"1083";"Coccidioides posadasii (strain RMSCC 757 / Silveira) (Valley fever fungus).";54;0,997530864197531;1;-0,0024691358024691
-"575";"Bos taurus (Bovine).";17247;0,951877518939937;0,954630483728521;-0,00275296478858367
-"197";"Anguilla japonica (Japanese eel).";59;0,997198879551821;1;-0,00280112044817926
-"66";"Agaricus bisporus (White button mushroom).";71;0,996415770609319;1;-0,00358422939068104
-"1689";"Emericella nidulans (strain FGSC A4 / ATCC 38163 / CBS 112.46 / NRRL 194 / M139) (Aspergillus nidulans).";2538;0,956700788746832;0,96038113272018;-0,00368034397334782
-"1173";"Coprinopsis cinerea (strain Okayama-7 / 130 / ATCC MYA-4618 / FGSC 9003) (Inky cap fungus) (Hormographiella aspergillata).";265;0,996168582375479;1;-0,00383141762452111
-"356";"Arthroderma otae (strain ATCC MYA-4605 / CBS 113480) (Microsporum canis).";171;0,986425339366516;0,990384615384615;-0,00395927601809964
-"252";"Antirrhinum majus (Garden snapdragon).";194;0,993019197207679;0,99738219895288;-0,00436300174520077
-"4770";"Trichophyton verrucosum (strain HKI 0517).";88;0,995263157894737;1;-0,00473684210526315
-"2306";"Laccaria bicolor (strain S238N-H82 / ATCC MYA-4686) (Bicoloured deceiver) (Laccaria laccata var. bicolor).";205;0,995098039215686;1;-0,00490196078431371
-"4142";"Saimiri boliviensis boliviensis (Bolivian squirrel monkey).";131;0,990712074303406;0,995614035087719;-0,00490196078431371
-"3073";"Neosartorya fumigata (strain CEA10 / CBS 144.89 / FGSC A1163) (Aspergillus fumigatus).";612;0,975448688449149;0,980763920846756;-0,00531523239760701
-"4031";"Rhinolophus ferrumequinum (Greater horseshoe bat).";78;0,994520547945206;1;-0,0054794520547945
-"2141";"Hevea brasiliensis (Para rubber tree) (Siphonia brasiliensis).";76;0,994366197183099;1;-0,0056338028169014
-"744";"Candida albicans (strain WO-1) (Yeast).";323;0,961538461538462;0,967741935483871;-0,00620347394540943
-"649";"Bubalus bubalis (Domestic water buffalo).";52;0,96875;0,975;-0,00624999999999998
-"2235";"Ictalurus punctatus (Channel catfish) (Silurus punctatus).";162;0,993421052631579;1;-0,00657894736842102
-"4109";"Saccharomyces cerevisiae (strain YJM789) (Baker's yeast).";1232;0,912410936205468;0,919585749792875;-0,00717481358740679
-"789";"Capsicum annuum (Bell pepper).";138;0,992700729927007;1;-0,00729927007299269
-"3668";"Pisum sativum (Garden pea).";935;0,94279926335175;0,95073664825046;-0,00793738489871088
-"517";"Beta vulgaris (Sugar beet).";129;0,992;1;-0,00800000000000001
-"3866";"Protobothrops flavoviridis (Habu) (Trimeresurus flavoviridis).";113;0,991898148148148;1;-0,00810185185185186
-"4214";"Schizosaccharomyces japonicus (strain yFS275 / FY16936) (Fission yeast).";123;0,987603305785124;0,995867768595041;-0,00826446280991733
-"3070";"Neosartorya fischeri (strain ATCC 1020 / DSM 3700 / FGSC A1164 / NRRL 181) (Aspergillus fischerianus).";1207;0,978477293160538;0,986766221520514;-0,0082889283599763
-"4905";"Vanderwaltozyma polyspora (strain ATCC 22028 / DSM 70294) (Kluyveromyces polysporus).";871;0,940301974448316;0,94883855981417;-0,00853658536585367
-"2003";"Glycine max (Soybean) (Glycine hispida).";909;0,978933167289332;0,988013698630137;-0,00908053134080533
-"4419";"Sparus aurata (Gilthead sea bream).";70;0,99075500770416;1;-0,00924499229583975
-"263";"Aotus nancymaae (Ma's night monkey).";64;0,98;0,99;-0,01
-"4570";"Takifugu rubripes (Japanese pufferfish) (Fugu rubripes).";497;0,967060677698976;0,977226162332545;-0,0101654846335698
-"3372";"Paracoccidioides brasiliensis (strain Pb03).";85;0,988304093567251;1;-0,0116959064327485
-"1282";"Cryptococcus neoformans var. neoformans serotype D (strain B-3501A) (Filobasidiella neoformans).";1482;0,986901535682023;0,998644986449865;-0,0117434507678411
-"3106";"Nicotiana tabacum (Common tobacco).";974;0,972340425531915;0,984230287859825;-0,0118898623279099
-"1283";"Cryptococcus neoformans var. neoformans serotype D (strain JEC21 / ATCC MYA-565) (Filobasidiella neoformans).";1511;0,986378737541528;0,998338870431894;-0,0119601328903655
-"2590";"Macaca mulatta (Rhesus macaque).";682;0,960942706216985;0,973157253149126;-0,0122145469321414
-"2200";"Hylobates lar (Common gibbon) (White-handed gibbon).";216;0,888225538971808;0,900497512437811;-0,0122719734660033
-"89";"Ajellomyces capsulatus (strain H143) (Darling's disease fungus) (Histoplasma capsulatum).";103;0,987373737373737;1;-0,0126262626262627
-"3212";"Onchocerca volvulus.";233;0,987357774968394;1;-0,0126422250316056
-"3373";"Paracoccidioides brasiliensis (strain Pb18).";105;0,987113402061856;1;-0,0128865979381443
-"4208";"Schistosoma japonicum (Blood fluke).";107;0,981566820276498;0,994623655913978;-0,0130568356374808
-"4003";"Rattus norvegicus (Rat).";22373;0,940208629877661;0,953380965819554;-0,0131723359418935
-"3453";"Penicillium chrysogenum (Penicillium notatum).";77;0,986301369863014;1;-0,0136986301369864
-"1035";"Ciona intestinalis (Transparent sea squirt) (Ascidia intestinalis).";74;0,986111111111111;1;-0,0138888888888888
-"4140";"Saguinus oedipus (Cotton-top tamarin).";71;0,98582995951417;1;-0,0141700404858299
-"410";"Aspergillus terreus (strain NIH 2624 / FGSC A1156).";1123;0,964998840594646;0,979253085306469;-0,0142542447118233
-"88";"Ajellomyces capsulatus (strain G186AR / H82 / ATCC MYA-2454 / RMSCC 2432) (Darling's disease fungus) (Histoplasma capsulatum).";130;0,985655737704918;1;-0,014344262295082
-"1968";"Gibberella zeae (strain PH-1 / ATCC MYA-4620 / FGSC 9075 / NRRL 31084) (Wheat head blight fungus) (Fusarium graminearum).";878;0,983122362869198;0,999424626006905;-0,0163022631377062
-"3130";"Notophthalmus viridescens (Eastern newt) (Triturus viridescens).";62;0,983606557377049;1;-0,0163934426229508
-"3454";"Penicillium chrysogenum (strain ATCC 28089 / DSM 1075 / Wisconsin 54-1255) (Penicillium notatum).";179;0,980537534754402;0,996987951807229;-0,0164504170528267
-"621";"Branchiostoma floridae (Florida lancelet) (Amphioxus).";259;0,655642023346304;0,672178988326848;-0,0165369649805448
-"4892";"Ustilago maydis (strain 521 / FGSC 9021) (Corn smut fungus).";1358;0,904950168849353;0,92220574911457;-0,017255580265217
-"401";"Aspergillus oryzae (strain ATCC 42149 / RIB 40) (Yellow koji mold).";1622;0,963264659828639;0,981638194432227;-0,0183735346035879
-"2103";"Heliothis virescens (Tobacco budworm moth).";86;0,98125;1;-0,01875
-"2936";"Mus musculus (Mouse).";48910;0,93098364880608;0,949813281826306;-0,018829633020226
-"4209";"Schistosoma mansoni (Blood fluke).";222;0,879672897196262;0,900116822429907;-0,0204439252336449
-"400";"Aspergillus niger (strain CBS 513.88 / FGSC A1513).";1140;0,967377873880235;0,988372093023256;-0,020994219143021
-"3557";"Phaseolus vulgaris (Kidney bean) (French bean).";244;0,928037582746103;0,950138799914585;-0,0221012171684818
-"4107";"Saccharomyces cerevisiae (strain RM11-1a) (Baker's yeast).";480;0,860813704496788;0,883544720803821;-0,0227310163070333
-"4227";"Sclerotinia sclerotiorum (strain ATCC 18683 / 1980 / Ss-1) (White mold) (Whetzelinia sclerotiorum).";674;0,975975975975976;0,999249249249249;-0,0232732732732733
-"4861";"Uncinocarpus reesii (strain UAMH 1704).";137;0,970963995354239;0,995934959349594;-0,0249709639953543
-"1997";"Gloydius halys (Chinese water mocassin) (Agkistrodon halys).";146;0,974410774410774;1;-0,0255892255892256
-"3072";"Neosartorya fumigata (strain ATCC MYA-4609 / Af293 / CBS 101355 / FGSC A1100) (Aspergillus fumigatus).";2080;0,953485653003052;0,979290895089727;-0,0258052420866747
-"743";"Candida albicans (strain SC5314 / ATCC MYA-2876) (Yeast).";2962;0,930059468065181;0,956337797340326;-0,0262783292751451
-"2296";"Komagataella pastoris (strain GS115 / ATCC 20864) (Yeast) (Pichia pastoris).";200;0,970790378006873;0,997422680412371;-0,0266323024054983
-"4149";"Salmo salar (Atlantic salmon).";589;0,938400702987698;0,96572934973638;-0,0273286467486819
-"3228";"Ophiophagus hannah (King cobra) (Naja hannah).";63;0,959401709401709;0,987179487179487;-0,0277777777777778
-"4521";"Sus scrofa (Pig).";3025;0,941133730458763;0,968943800778809;-0,0278100703200458
-"626";"Brassica napus (Rape).";638;0,942123709387137;0,970588235294118;-0,0284645259069811
-"745";"Candida albicans (Yeast).";431;0,968669950738916;0,997536945812808;-0,0288669950738916
-"3465";"Penicillium marneffei (strain ATCC 18224 / CBS 334.59 / QM 7333).";150;0,970950704225352;1;-0,0290492957746479
-"3310";"Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan).";54;0,970394736842105;1;-0,0296052631578947
-"4712";"Toxoplasma gondii.";153;0,813868613138686;0,84375;-0,0298813868613139
-"3355";"Pan troglodytes (Chimpanzee).";1649;0,912172438976998;0,942570034908574;-0,0303975959315765
-"1082";"Coccidioides posadasii (strain C735) (Valley fever fungus).";148;0,96890012642225;1;-0,0310998735777497
-"4105";"Saccharomyces cerevisiae (strain Lalvin EC1118 / Prise de mousse) (Baker's yeast).";380;0,91015274034142;0,944444444444444;-0,0342917041030248
-"4573";"Talaromyces stipitatus (strain ATCC 10500 / CBS 375.48 / QM 6759 / NRRL 1006) (Penicillium stipitatum).";162;0,96474358974359;1;-0,0352564102564102
-"2743";"Mesocricetus auratus (Golden hamster).";707;0,959695585996956;0,996194824961948;-0,0364992389649924
-"3267";"Oryza sativa subsp. indica (Rice).";1800;0,932004713148058;0,969080123516984;-0,0370754103689257
-"91";"Ajellomyces capsulatus (strain NAm1 / WU24) (Darling's disease fungus) (Histoplasma capsulatum).";393;0,960769800148038;0,998704663212435;-0,0379348630643968
-"795";"Carassius auratus (Goldfish).";424;0,866365914786967;0,904812030075188;-0,0384461152882205
-"3362";"Papio hamadryas (Hamadryas baboon).";152;0,772446383133406;0,812068338785896;-0,0396219556524899
-"354";"Arthroderma gypseum (strain ATCC MYA-4604 / CBS 118893) (Microsporum gypseum).";83;0,960171568627451;1;-0,039828431372549
-"761";"Candida tropicalis (Yeast).";73;0,958333333333333;1;-0,0416666666666666
-"5011";"Yarrowia lipolytica (strain CLIB 122 / E 150) (Yeast) (Candida lipolytica).";2535;0,884961834822559;0,927043012697609;-0,0420811778750497
-"3386";"Paramecium tetraurelia.";287;0,857400722021661;0,9;-0,0425992779783394
-"2587";"Macaca fuscata fuscata (Japanese macaque).";102;0,956521739130435;1;-0,0434782608695652
-"2633";"Magnaporthe oryzae (strain 70-15 / ATCC MYA-4617 / FGSC 8958) (Rice blast fungus) (Pyricularia oryzae).";1142;0,938240970499035;0,9834229390681;-0,0451819685690654
-"2160";"Homo sapiens (Human).";63981;0,896752634988087;0,943288608537233;-0,0465359735491454
-"1221";"Cricetulus griseus (Chinese hamster) (Cricetulus barabensis griseus).";695;0,900273224043716;0,947124937903626;-0,0468517138599105
-"665";"Bungarus fasciatus (Banded krait) (Pseudoboa fasciata).";71;0,952380952380952;1;-0,0476190476190477
-"1630";"Drosophila yakuba (Fruit fly).";909;0,917789968652038;0,96551724137931;-0,0477272727272727
-"2925";"Mustela putorius furo (European domestic ferret) (Mustela furo).";81;0,945070422535211;0,992957746478873;-0,047887323943662
-"760";"Candida tropicalis (strain ATCC MYA-3404 / T1) (Yeast).";184;0,950837988826816;1;-0,0491620111731843
-"1198";"Coturnix coturnix japonica (Japanese quail) (Coturnix japonica).";246;0,860452488687783;0,912488687782805;-0,0520361990950227
-"51";"Aedes aegypti (Yellowfever mosquito) (Culex aegypti).";961;0,903795202291443;0,955925528105979;-0,0521303258145364
-"3374";"Paracoccidioides lutzii (strain ATCC MYA-826 / Pb01) (Paracoccidioides brasiliensis).";106;0,945165945165945;1;-0,0548340548340548
-"1115";"Colobus guereza (Mantled guereza) (Eastern black-and-white colobus monkey).";69;0,945054945054945;1;-0,054945054945055
-"3536";"Phaeosphaeria nodorum (strain SN15 / ATCC MYA-4574 / FGSC 10173) (Glume blotch fungus) (Septoria nodorum).";913;0,942101368849427;0,997780244173141;-0,0556788753237144
-"1028";"Cicer arietinum (Chickpea) (Garbanzo).";116;0,943952802359882;1;-0,056047197640118
-"3294";"Ovis aries (Sheep).";975;0,888834207271397;0,94535564343327;-0,0565214361618731
-"3288";"Otolemur garnettii (Small-eared galago) (Garnett's greater bushbaby).";61;0,942424242424242;1;-0,0575757575757576
-"5022";"Zea mays (Maize).";1641;0,889229309814378;0,948351451133217;-0,0591221413188391
-"3051";"Nectria haematococca (strain 77-13-4 / ATCC MYA-4622 / FGSC 9596 / MPVI) (Fusarium solani subsp. pisi).";197;0,940663176265271;1;-0,0593368237347295
-"394";"Aspergillus flavus (strain ATCC 200026 / FGSC A1120 / NRRL 3357 / JCM 12722 / SRRC 167).";276;0,877233782129743;0,938372093023256;-0,0611383108935128
-"835";"Cavia porcellus (Guinea pig).";678;0,922192451691893;0,983675497276292;-0,0614830455843994
-"900";"Cervus elaphus (Red deer).";78;0,936507936507937;1;-0,0634920634920635
-"4045";"Rhipicephalus sanguineus (Brown dog tick) (Ixodes sanguineus).";141;0,86231884057971;0,927536231884058;-0,0652173913043478
-"4656";"Theileria parva (East coast fever infection agent).";114;0,809090909090909;0,875;-0,0659090909090909
-"3327";"Panax ginseng (Korean ginseng).";213;0,882075471698113;0,94811320754717;-0,0660377358490566
-"4098";"Saccharomyces cerevisiae (strain AWRI1631) (Baker's yeast).";283;0,881684981684982;0,948168498168498;-0,0664835164835165
-"733";"Camelus dromedarius (Dromedary) (Arabian camel).";55;0,931972789115646;1;-0,0680272108843537
-"3257";"Oryctolagus cuniculus (Rabbit).";1837;0,894894800025273;0,963025561101634;-0,0681307610763604
-"4442";"Spinacia oleracea (Spinach).";492;0,931833674164963;1;-0,0681663258350375
-"76";"Agkistrodon piscivorus piscivorus (Eastern cottonmouth).";63;0,931034482758621;1;-0,0689655172413793
-"3092";"Neurospora crassa (strain ATCC 24698 / 74-OR23-1A / CBS 708.71 / DSM 1257 / FGSC 987).";3036;0,875818082062938;0,945722459536779;-0,0699043774738409
-"1994";"Gloydius blomhoffii (Mamushi) (Agkistrodon halys blomhoffi).";85;0,926739926739927;1;-0,0732600732600732
-"3804";"Pongo pygmaeus (Bornean orangutan).";455;0,847563472563473;0,926341113841114;-0,0787776412776412
-"752";"Candida maltosa (Yeast).";78;0,921052631578947;1;-0,0789473684210527
-"3629";"Pichia angusta (Yeast) (Hansenula polymorpha).";122;0,915966386554622;0,995798319327731;-0,0798319327731093
-"2311";"Lachancea thermotolerans (strain ATCC 56472 / CBS 6340 / NRRL Y-8284) (Yeast) (Kluyveromyces thermotolerans).";364;0,818384401114206;0,898607242339833;-0,0802228412256267
-"4103";"Saccharomyces cerevisiae (strain JAY291) (Baker's yeast).";409;0,864166666666667;0,944444444444444;-0,0802777777777778
-"4975";"Vitis vinifera (Grape).";318;0,919614147909968;1;-0,0803858520900321
-"766";"Canis familiaris (Dog) (Canis lupus familiaris).";1640;0,885878884980786;0,966560688938679;-0,0806818039578926
-"990";"Chlamydomonas reinhardtii (Chlamydomonas smithii).";962;0,772667714884696;0,854035639412998;-0,0813679245283019
-"3682";"Plasmodium chabaudi.";103;0,833333333333333;0,916666666666667;-0,0833333333333333
-"211";"Anopheles gambiae (African malaria mosquito).";930;0,870962447478992;0,954766281512605;-0,0838038340336134
-"4027";"Rhinoceros unicornis (Greater Indian rhinoceros).";142;0,843971631205674;0,929078014184397;-0,0851063829787234
-"2022";"Gorilla gorilla gorilla (Western lowland gorilla).";682;0,872054362334668;0,963936415483558;-0,0918820531488896
-"2165";"Hordeum vulgare (Barley).";719;0,881767227167821;0,974793933399275;-0,093026706231454
-"1382";"Cyprinus carpio (Common carp).";208;0,744736842105263;0,841812865497076;-0,0970760233918129
-"409";"Aspergillus terreus.";55;0,901960784313726;1;-0,0980392156862745
-"1285";"Cryptomeria japonica (Japanese cedar) (Cupressus japonica).";101;0,898989898989899;1;-0,101010101010101
-"4144";"Saimiri sciureus (Common squirrel monkey).";90;0,89;0,992857142857143;-0,102857142857143
-"3071";"Neosartorya fumigata (Aspergillus fumigatus).";51;0,896296296296296;1;-0,103703703703704
-"94";"Ajellomyces dermatitidis (strain SLH14081) (Blastomyces dermatitidis).";122;0,895771878072763;1;-0,104228121927237
-"4930";"Verticillium alfalfae (strain VaMs.102 / ATCC MYA-4576 / FGSC 10136) (Verticillium wilt of alfalfa) (Verticillium albo-atrum).";80;0,810810810810811;0,916666666666667;-0,105855855855856
-"179";"Anas platyrhynchos (Mallard) (Anas boschas).";103;0,735483870967742;0,84247311827957;-0,106989247311828
-"93";"Ajellomyces dermatitidis (strain ER-3 / ATCC MYA-2586) (Blastomyces dermatitidis).";123;0,890217391304348;1;-0,109782608695652
-"3201";"Olea europaea (Common olive).";101;0,757731958762887;0,875;-0,117268041237113
-"393";"Aspergillus flavus.";89;0,767068273092369;0,885542168674699;-0,118473895582329
-"4803";"Triticum aestivum (Wheat).";733;0,85788013318535;0,981132075471698;-0,123251942286349
-"3219";"Oncorhynchus mykiss (Rainbow trout) (Salmo gairdneri).";374;0,844924812030075;0,96875;-0,123825187969925
-"3354";"Pan paniscus (Pygmy chimpanzee) (Bonobo).";330;0,835167714884696;0,966981132075472;-0,131813417190776
-"2558";"Lumbricus terrestris (Common earthworm).";145;0,867132867132867;1;-0,132867132867133
-"4635";"Tetraodon nigroviridis (Spotted green pufferfish) (Chelonodon nigroviridis).";288;0,812014134275618;0,962897526501767;-0,150883392226148
-"1890";"Gadus morhua (Atlantic cod).";215;0,699047619047619;0,852380952380952;-0,153333333333333
-"1740";"Equus caballus (Horse).";610;0,805828443330916;0,978967495219885;-0,173139051888969
-"1048";"Citrus sinensis (Sweet orange) (Citrus aurantium var. sinensis).";129;0,572;0,75;-0,178
-"1587";"Drosophila mauritiana (Fruit fly).";78;0,821428571428571;1;-0,178571428571429
-"486";"Balaenoptera physalus (Finback whale) (Common rorqual).";123;0,655737704918033;0,836065573770492;-0,180327868852459
-"2501";"Locusta migratoria (Migratory locust).";227;0,627027027027027;0,807657657657658;-0,180630630630631
-"4780";"Trichosurus vulpecula (Brush-tailed possum).";62;0,818439716312057;1;-0,181560283687943
-"1834";"Felis catus (Cat) (Felis silvestris catus).";547;0,751062155782848;0,935470757933386;-0,184408602150538
-"4460";"Squalus acanthias (Spiny dogfish).";206;0,712195121951219;0,902439024390244;-0,190243902439024
-"1433";"Delphinapterus leucas (Beluga whale).";68;0,805128205128205;1;-0,194871794871795
-"3382";"Paralichthys olivaceus (Bastard halibut) (Hippoglossus olivaceus).";59;0,802675585284281;1;-0,197324414715719
-"1688";"Emericella nidulans (Aspergillus nidulans).";100;0,797979797979798;1;-0,202020202020202
-"2867";"Monodelphis domestica (Gray short-tailed opossum).";109;0,791280148423006;0,994897959183674;-0,203617810760668
-"2506";"Lolium perenne (Perennial ryegrass).";104;0,792079207920792;1;-0,207920792079208
-"4409";"Sorghum bicolor (Sorghum) (Sorghum vulgare).";327;0,685714285714286;0,898447204968944;-0,212732919254658
-"4368";"Sordaria macrospora (strain ATCC MYA-333 / DSM 997 / K(L3346) / K-hell).";112;0,781446540880503;1;-0,218553459119497
-"3368";"Paracentrotus lividus (Common sea urchin).";185;0,726775956284153;0,945355191256831;-0,218579234972678
-"779";"Capra hircus (Goat).";160;0,771657142857143;0,992;-0,220342857142857
-"808";"Carica papaya (Papaya).";128;0,678048780487805;0,9;-0,221951219512195
-"2091";"Helianthus annuus (Common sunflower).";288;0,766081871345029;1;-0,233918128654971
-"1413";"Dasypus novemcinctus (Nine-banded armadillo).";158;0,534640522875817;0,772549019607843;-0,237908496732026
-"399";"Aspergillus niger.";260;0,743075920495275;0,981345715216683;-0,238269794721408
-"4987";"Vulpes vulpes (Red fox).";74;0,759803921568627;1;-0,240196078431373
-"4495";"Struthio camelus (Common ostrich).";173;0,696078431372549;0,944117647058824;-0,248039215686275
-"3576";"Phoca vitulina (Harbor seal).";161;0,691823899371069;0,940251572327044;-0,248427672955975
-"1066";"Claviceps purpurea (Ergot fungus) (Sphacelia segetum).";78;0,75;1;-0,25
-"1281";"Cryptococcus neoformans var. grubii serotype A (strain H99 / ATCC 208821 / CBS 10515 / FGSC 9487) (Filobasidiella neoformans var. grubii).";88;0,738372093023256;1;-0,261627906976744
-"622";"Branchiostoma lanceolatum (Common lancelet) (Amphioxus lanceolatum).";149;0,608108108108108;0,871621621621622;-0,263513513513513
-"874";"Ceratitis capitata (Mediterranean fruit fly) (Tephritis capitata).";90;0,567049808429119;0,833333333333333;-0,266283524904215
-"1833";"Fasciola hepatica (Liver fluke).";75;0,72972972972973;1;-0,27027027027027
-"3252";"Ornithorhynchus anatinus (Duckbill platypus).";157;0,661224489795918;0,935374149659864;-0,274149659863946
-"379";"Ascaris suum (Pig roundworm) (Ascaris lumbricoides).";344;0,694117647058824;0,970588235294118;-0,276470588235294
-"1737";"Equus asinus (Donkey).";188;0,643251775848461;0,947513812154696;-0,304262036306235
-"2385";"Lemur catta (Ring-tailed lemur).";166;0,631901840490798;0,938650306748466;-0,306748466257669
-"404";"Aspergillus parasiticus.";115;0,614035087719298;0,921052631578947;-0,307017543859649
-"2063";"Halichoerus grypus (Gray seal).";143;0,623809523809524;0,932142857142857;-0,308333333333333
-"1888";"Fusarium solani subsp. pisi (Nectria haematococca).";63;0,688524590163934;1;-0,311475409836066
-"3464";"Penicillium marneffei.";64;0,682539682539683;1;-0,317460317460317
-"571";"Bos indicus (Zebu).";167;0,555555555555556;0,876543209876543;-0,320987654320988
-"4764";"Trichophyton rubrum (Athlete's foot fungus) (Epidermophyton rubrum).";139;0,654234654234654;0,977272727272727;-0,323038073038073
-"3522";"Petromyzon marinus (Sea lamprey).";188;0,623611111111111;0,947222222222222;-0,323611111111111
-"3767";"Podospora anserina (strain S / ATCC MYA-4624 / DSM 980 / FGSC 10383) (Pleurage anserina).";327;0,527603074772886;0,85272536687631;-0,325122292103424
-"2581";"Lytechinus variegatus (Green sea urchin) (Variegated urchin).";76;0,655405405405405;1;-0,344594594594595
-"1618";"Drosophila subobscura (Fruit fly).";56;0,65;1;-0,35
-"881";"Ceratotherium simum (White rhinoceros) (Square-lipped rhinoceros).";142;0,578571428571429;0,928571428571429;-0,35
-"2148";"Hippopotamus amphibius (Hippopotamus).";161;0,50625;0,875;-0,36875
-"2573";"Lymnaea stagnalis (Great pond snail) (Helix stagnalis).";75;0,592592592592593;0,972222222222222;-0,37962962962963
-"3011";"Myxine glutinosa (Atlantic hagfish).";144;0,545454545454545;0,93006993006993;-0,384615384615385
-"1270";"Cryphonectria parasitica (Chesnut blight fungus) (Endothia parasitica).";104;0,6025;1;-0,3975
-"1479";"Didelphis virginiana (North American opossum) (Didelphis marsupialis virginiana).";173;0,534023668639053;0,940828402366864;-0,406804733727811
-"3651";"Pinus sylvestris (Scots pine).";51;0,591836734693878;1;-0,408163265306122
-"2222";"Hypocrea jecorina (Trichoderma reesei).";108;0,574898785425101;1;-0,425101214574899
-"3008";"Mytilus edulis (Blue mussel).";123;0,566115702479339;1;-0,433884297520661
-"2531";"Loxodonta africana (African elephant).";176;0,545977011494253;1;-0,454022988505747
-"3419";"Patiria pectinifera (Starfish) (Asterina pectinifera).";147;0,544827586206897;1;-0,455172413793103
-"4211";"Schizophyllum commune (Split gill fungus).";102;0,539930555555556;1;-0,460069444444444
-"3583";"Phodopus sungorus (Striped hairy-footed hamster) (Djungarian hamster).";85;0,536585365853659;1;-0,463414634146341
-"3080";"Neovison vison (American mink) (Mustela vison).";57;0,513833992094862;1;-0,486166007905138
-"573";"Bos mutus grunniens (Wild yak) (Bos grunniens).";150;0,506849315068493;1;-0,493150684931507
-"2727";"Meriones unguiculatus (Mongolian jird) (Mongolian gerbil).";62;0,501488095238095;1;-0,498511904761905
+;OS;Count;Count_sp;signalHsmm;signalP;diff
+3534;Phaeodactylum tricornutum.;98;1;1;0,5;0,5
+4824;Trypanosoma cruzi (strain CL Brener).;142;3;1;0,503546099;0,496453901
+1098;Coffea arabica (Arabian coffee).;127;1;0,992063492;0,5;0,492063492
+4954;Vigna radiata var. radiata (Mung bean) (Phaseolus aureus).;53;1;0,980769231;0,5;0,480769231
+1225;Crithidia fasciculata.;59;1;0,896551724;0,5;0,396551724
+632;Brassica oleracea (Wild cabbage).;51;3;1;0,666666667;0,333333333
+4772;Trichoplax adhaerens (Trichoplax reptans).;111;1;0,818181818;0,5;0,318181818
+1325;Cucumis sativus (Cucumber).;271;1;0,777777778;0,5;0,277777778
+1332;Culex quinquefasciatus (Southern house mosquito) (Culex pungens).;507;2;1;0,75;0,25
+3688;Plasmodium falciparum.;118;21;1;0,75;0,25
+3704;Plasmodium falciparum (isolate K1 / Thailand).;105;6;1;0,75;0,25
+3729;Plasmodium vivax (strain Salvador I).;103;2;0,910891089;0,660891089;0,25
+3690;Plasmodium falciparum (isolate 3D7).;428;2;0,938574939;0,737334737;0,201240201
+3680;Plasmodium berghei (strain Anka).;72;1;0,946969697;0,75;0,196969697
+1463;Dianthus caryophyllus (Carnation) (Clove pink).;129;3;1;0,833333333;0,166666667
+1593;Drosophila mojavensis (Fruit fly).;647;11;0,971841052;0,818181818;0,153659234
+4653;Theileria annulata.;99;4;0,9;0,75;0,15
+279;Aplysia californica (California sea hare).;65;25;0,908;0,76;0,148
+2914;Musca domestica (House fly).;56;2780;0,955974843;0,823899371;0,132075472
+4202;Scheffersomyces stipitis (strain ATCC 58785 / CBS 6054 / NBRC 10063 / NRRL Y-11545) (Yeast) (Pichia stipitis).;996;4;0,992439516;0,875;0,117439516
+4070;Ricinus communis (Castor bean).;181;8;0,992052023;0,875;0,117052023
+3525;Petunia hybrida (Petunia).;248;5;0,969547325;0,865020576;0,104526749
+1629;Drosophila willistoni (Fruit fly).;661;11;0,99958042;0,896013986;0,103566434
+3730;Plasmodium yoelii yoelii.;97;6;1;0,916666667;0,083333333
+119;Alligator mississippiensis (American alligator).;122;1;1;0,917355372;0,082644628
+1081;Coccidioides immitis (strain RS) (Valley fever fungus).;1071;6;0,997183099;0,916197183;0,080985915
+1604;Drosophila persimilis (Fruit fly).;635;18;0,995948136;0,916666667;0,079281469
+83;Ailuropoda melanoleuca (Giant panda).;165;17;0,986486486;0,908386328;0,078100159
+642;Brugia malayi (Filarial nematode worm).;254;4;0,953;0,875;0,078
+1627;Drosophila virilis (Fruit fly).;928;22;0,986002408;0,909090909;0,076911499
+1569;Drosophila grimshawi (Fruit fly) (Idiomyia grimshawi).;650;14;0,919699012;0,842991914;0,076707098
+2373;Leishmania major.;224;1;0,565022422;0,5;0,065022422
+928;Chaetomium globosum (strain ATCC 6205 / CBS 148.51 / DSM 1962 / NBRC 6347 / NRRL 1970) (Soil fungus).;975;4;0,935633368;0,873455201;0,062178167
+4948;Vicia faba (Broad bean) (Faba vulgaris).;151;6;0,97816092;0,916666667;0,061494253
+1609;Drosophila pseudoobscura pseudoobscura (Fruit fly).;1302;32;0,995152559;0,936712598;0,058439961
+1543;Drosophila ananassae (Fruit fly).;698;16;0,993126833;0,9375;0,055626833
+2525;Lottia gigantea (Giant owl limpet).;51;27;1;0,944444444;0,055555556
+2502;Lodderomyces elongisporus (strain ATCC 11503 / CBS 2605 / JCM 1781 / NBRC 1676 / NRRL YB-4239) (Yeast) (Saccharomyces elongisporus).;781;9;0,983880253;0,932138745;0,051741508
+5002;Xenopus tropicalis (Western clawed frog) (Silurana tropicalis).;5491;119;0,965353342;0,915235081;0,05011826
+2761;Meyerozyma guilliermondii (strain ATCC 6260 / CBS 566 / DSM 6381 / JCM 1539 / NBRC 10279 / NRRL Y-324) (Yeast) (Candida guilliermondii).;935;9;0,983321334;0,933645308;0,049676026
+2285;Kluyveromyces lactis (strain ATCC 8585 / CBS 2359 / DSM 70799 / NBRC 1267 / NRRL Y-1140 / WM37) (Yeast) (Candida sphaerica).;3067;32;0,961635091;0,913967257;0,047667834
+1704;Entamoeba histolytica.;183;11;0,996828753;0,951638478;0,045190275
+307;Arabidopsis thaliana (Mouse-ear cress).;45143;1920;0,973245593;0,928781774;0,044463819
+2370;Leishmania donovani.;137;1;0,544117647;0,5;0,044117647
+1427;Daucus carota (Wild carrot).;406;10;0,84280303;0,798737374;0,044065657
+599;Botryotinia fuckeliana (strain B05.10) (Noble rot fungus) (Botrytis cinerea).;672;6;0,955955956;0,915165165;0,040790791
+1404;Danio rerio (Zebrafish) (Brachydanio rerio).;9519;265;0,960078864;0,919607227;0,040471637
+4052;Rhizopus delemar (strain RA 99-880 / ATCC MYA-4621 / FGSC 9543 / NRRL 43880) (Mucormycosis agent) (Rhizopus arrhizus var. delemar).;141;9;0,984848485;0,944444444;0,04040404
+5042;Zygosaccharomyces rouxii (strain ATCC 2623 / CBS 732 / NBRC 1130 / NCYC 568 / NRRL Y-229) (Candida mogii).;370;7;0,96772924;0,928571429;0,039157812
+678;Caenorhabditis briggsae.;1720;45;0,963197347;0,924975124;0,038222222
+1429;Debaryomyces hansenii (strain ATCC 36239 / CBS 767 / JCM 1990 / NBRC 0083 / IGC 2968) (Yeast) (Torulaspora hansenii).;2530;21;0,957372507;0,920799408;0,036573099
+1474;Dictyostelium discoideum (Slime mold).;10640;369;0,983437858;0,949856451;0,033581407
+2025;Gossypium hirsutum (Upland cotton) (Gossypium mexicanum).;305;5;1;0,966666667;0,033333333
+4218;Schizosaccharomyces pombe (strain 972 / ATCC 24843) (Fission yeast).;12140;202;0,958574541;0,925662955;0,032911586
+1564;Drosophila erecta (Fruit fly).;815;30;0,998938429;0,966666667;0,032271762
+2712;Meleagris gallopavo (Common turkey).;153;12;0,94858156;0,916666667;0,031914894
+384;Ashbya gossypii (strain ATCC 10895 / CBS 109.51 / FGSC 9923 / NRRL Y-1056) (Yeast) (Eremothecium gossypii).;3225;26;0,953507106;0,921826532;0,031680573
+750;Candida glabrata (strain ATCC 2001 / CBS 138 / JCM 3761 / NBRC 0622 / NRRL Y-65) (Yeast) (Torulopsis glabrata).;2990;29;0,97549756;0,947093829;0,028403731
+275;Apis mellifera (Honeybee).;189;32;0,995023885;0,96875;0,026273885
+1589;Drosophila melanogaster (Fruit fly).;11253;361;0,9659322;0,940796086;0,025136114
+5001;Xenopus laevis (African clawed frog).;11102;304;0,967370298;0,94519392;0,022176378
+1616;Drosophila simulans (Fruit fly).;802;42;0,968953634;0,952380952;0,016572682
+679;Caenorhabditis elegans.;9177;438;0,941010512;0,924850732;0,01615978
+3960;Pyrenophora tritici-repentis (strain Pt-1C-BFP) (Wheat tan spot fungus) (Drechslera tritici-repentis).;186;8;0,950842697;0,934691011;0,016151685
+391;Aspergillus clavatus (strain ATCC 1007 / CBS 513.65 / DSM 816 / NCTC 3887 / NRRL 1).;1154;56;0,977507806;0,962919594;0,014588212
+4097;Saccharomyces cerevisiae (strain ATCC 204508 / S288c) (Baker's yeast).;16831;311;0,926535019;0,912717022;0,013817997
+1252;Crotalus adamanteus (Eastern diamondback rattlesnake).;79;39;0,974358974;0,961538462;0,012820513
+3803;Pongo abelii (Sumatran orangutan) (Pongo pygmaeus abelii).;6965;235;0,945838892;0,934651133;0,011187759
+2650;Manduca sexta (Tobacco hawkmoth) (Tobacco hornworm).;305;33;0,995543672;0,984848485;0,010695187
+2463;Limulus polyphemus (Atlantic horseshoe crab).;56;5;1;0,990196078;0,009803922
+265;Aotus trivirgatus (Three-striped night monkey) (Douroucouli).;55;8;0,946808511;0,9375;0,009308511
+1692;Encephalitozoon cuniculi (strain GB-M1) (Microsporidian parasite).;744;16;0,96299794;0,954326923;0,008671016
+2485;Lithobates catesbeiana (American bullfrog) (Rana catesbeiana).;197;19;0,981963335;0,973684211;0,008279125
+2249;Ipomoea batatas (Sweet potato) (Convolvulus batatas).;83;9;1;0,993243243;0,006756757
+4325;Solanum lycopersicum (Tomato) (Lycopersicon esculentum).;1016;45;0,960865088;0,954525689;0,006339398
+749;Candida dubliniensis (strain CD36 / ATCC MYA-646 / CBS 7987 / NCPF 3949 / NRRL Y-17841) (Yeast).;246;5;0,966804979;0,960580913;0,006224066
+3360;Papio anubis (Olive baboon).;162;24;0,985205314;0,979166667;0,006038647
+3271;Oryzias latipes (Japanese rice fish) (Japanese killifish).;325;13;0,963510848;0,958333333;0,005177515
+564;Bombyx mori (Silk moth).;459;76;0,996839357;0,99211557;0,004723787
+1613;Drosophila sechellia (Fruit fly).;776;22;0,981914637;0,977272727;0,00464191
+3766;Podospora anserina (Pleurage anserina).;120;3;1;0,995726496;0,004273504
+352;Arthroderma benhamiae (strain ATCC MYA-4681 / CBS 112371) (Trichophyton mentagrophytes).;95;55;0,994545455;0,990909091;0,003636364
+1784;Euglena gracilis.;300;1;1;0,996655518;0,003344482
+709;Callithrix jacchus (White-tufted-ear marmoset).;242;35;0,987853692;0,985714286;0,002139406
+3815;Populus trichocarpa (Western balsam poplar) (Populus balsamifera subsp. trichocarpa).;247;4;1;0,997942387;0,002057613
+3105;Nicotiana sylvestris (Wood tobacco) (South American tobacco).;262;1;1;0,998084291;0,001915709
+4494;Strongylocentrotus purpuratus (Purple sea urchin).;357;18;0,862012455;0,86086529;0,001147165
+3055;Nematostella vectensis (Starlet sea anemone).;552;14;0,999867233;0,999070632;0,000796601
+2694;Medicago sativa (Alfalfa).;130;7;0,996515679;0,995934959;0,00058072
+1913;Gallus gallus (Chicken).;6247;367;0,939827661;0,939390906;0,000436755
+158;Ambystoma mexicanum (Axolotl).;65;4;1;1;0
+193;Anguilla anguilla (European freshwater eel) (Muraena anguilla).;74;5;1;1;0
+592;Bothrops moojeni (Lance-headed viper) (Caissaca).;64;7;1;1;0
+624;Brassica campestris (Field mustard).;107;2;1;1;0
+692;Callicebus moloch (Dusky titi monkey).;52;8;1;1;0
+770;Cannabis sativa (Hemp) (Marijuana).;53;5;1;1;0
+826;Catharanthus roseus (Madagascar periwinkle) (Vinca rosea).;164;2;0,941358025;0,941358025;0
+898;Cerrophidion godmani (Porthidium godmani) (Bothrops godmani).;57;1;1;1;0
+1119;Columba livia (Rock dove).;66;3;1;1;0
+1202;Craterostigma plantagineum (Blue gem) (Torenia plantagineum).;103;1;1;1;0
+1253;Crotalus atrox (Western diamondback rattlesnake).;57;15;1;1;0
+1259;Crotalus durissus terrificus (South American rattlesnake).;94;17;1;1;0
+1326;Cucurbita maxima (Pumpkin) (Winter squash).;54;3;1;1;0
+1388;Daboia russelii (Russel's viper) (Vipera russelii).;88;12;1;1;0
+1431;Deinagkistrodon acutus (Hundred-pace snake) (Agkistrodon acutus).;61;20;1;1;0
+1535;Dromaius novaehollandiae (Emu).;103;4;1;1;0
+1643;Echinococcus granulosus (Hydatid tapeworm).;86;1;1;1;0
+1957;Giardia intestinalis (Giardia lamblia).;106;5;1;1;0
+2024;Gossypium barbadense (Sea-island cotton) (Egyptian cotton).;118;1;1;1;0
+2100;Heliocidaris crassispina (Sea urchin) (Anthocidaris crassispina).;80;1;1;1;0
+2130;Heterodontus francisci (Horn shark) (Cestracion francisci).;62;1;1;1;0
+2297;Komagataella pastoris (Yeast) (Pichia pastoris).;130;2;1;1;0
+2352;Laticauda colubrina (Yellow-lipped sea krait) (Banded sea krait).;65;8;1;1;0
+2354;Laticauda semifasciata (Black-banded sea krait) (Pseudolaticauda semifasciata).;52;16;1;1;0
+2457;Lilium longiflorum (Trumpet lily).;58;6;1;1;0
+2626;Macrovipera lebetina (Levantine viper) (Vipera lebetina).;67;38;1;1;0
+2643;Malus domestica (Apple) (Pyrus malus).;136;4;1;1;0
+2873;Monosiga brevicollis (Choanoflagellate).;185;1;1;1;0
+3019;Naja atra (Chinese cobra).;86;48;1;1;0
+3022;Naja mossambica (Mozambique spitting cobra).;56;1;1;1;0
+3122;Notechis scutatus scutatus (Mainland tiger snake) (Common tiger snake).;92;17;1;1;0
+3216;Oncorhynchus keta (Chum salmon) (Salmo keta).;58;13;1;1;0
+3218;Oncorhynchus masou (Cherry salmon) (Masu salmon).;62;5;1;1;0
+3247;Oreochromis niloticus (Nile tilapia) (Tilapia nilotica).;64;3;1;1;0
+3275;Oscheius tipulae.;71;1;1;1;0
+3357;Papaver somniferum (Opium poppy).;95;1;1;1;0
+3679;Plasmodium berghei.;62;6;1;1;0
+3869;Protobothrops mucrosquamatus (Taiwan habu) (Trimeresurus mucrosquamatus).;60;23;1;1;0
+3895;Pseudechis australis (Mulga snake) (King brown snake).;216;14;1;1;0
+3994;Raphanus sativus (Radish).;115;1;1;1;0
+4205;Schistocerca gregaria (Desert locust).;107;3;1;1;0
+4301;Sminthopsis crassicaudata (Fat-tailed dunnart) (Phascogale crassicaudata).;61;1;1;1;0
+4429;Spermophilus tridecemlineatus (Thirteen-lined ground squirrel) (Ictidomys tridecemlineatus).;65;8;1;1;0
+4451;Spodoptera frugiperda (Fall armyworm).;71;2;1;1;0
+4630;Tetrahymena pyriformis.;79;1;1;1;0
+4791;Trimeresurus gramineus (Bamboo pit viper) (Indian green tree viper).;67;11;1;1;0
+4793;Trimeresurus stejnegeri (Chinese green tree viper) (Viridovipera stejnegeri).;161;49;1;1;0
+4823;Trypanosoma cruzi.;218;1;1;1;0
+4845;Tursiops truncatus (Atlantic bottle-nosed dolphin) (Delphinus truncatus).;52;7;1;1;0
+5008;Xiphophorus maculatus (Southern platyfish) (Platypoecilus maculatus).;58;3;1;1;0
+2740;Mesembryanthemum crystallinum (Common ice plant) (Cryophytum crystallinum).;108;1;1;1;-1,11E-16
+3104;Nicotiana plumbaginifolia (Leadwort-leaved tobacco) (Tex-Mex tobacco).;110;3;1;1;-1,11E-16
+2586;Macaca fascicularis (Crab-eating macaque) (Cynomolgus monkey).;2980;169;0,95070928;0,950753485;-4,42E-05
+997;Chlorocebus aethiops (Green monkey) (Cercopithecus aethiops).;391;37;0,959154069;0,959459459;-0,00030539
+4333;Solanum tuberosum (Potato).;715;55;0,952231405;0,953030303;-0,000798898
+3268;Oryza sativa subsp. japonica (Rice).;8887;431;0,954535776;0,956350273;-0,001814497
+1069;Clavispora lusitaniae (strain ATCC 42720) (Yeast) (Candida lusitaniae).;182;3;0,998137803;1;-0,001862197
+4817;Trypanosoma brucei brucei.;443;8;0,809482759;0,811350575;-0,001867816
+2697;Medicago truncatula (Barrel medic) (Medicago tribuloides).;223;9;0,997923157;1;-0,002076843
+1083;Coccidioides posadasii (strain RMSCC 757 / Silveira) (Valley fever fungus).;54;9;0,997530864;1;-0,002469136
+575;Bos taurus (Bovine).;17247;904;0,951877519;0,954630484;-0,002752965
+197;Anguilla japonica (Japanese eel).;59;17;0,99719888;1;-0,00280112
+66;Agaricus bisporus (White button mushroom).;71;9;0,996415771;1;-0,003584229
+1689;Emericella nidulans (strain FGSC A4 / ATCC 38163 / CBS 112.46 / NRRL 194 / M139) (Aspergillus nidulans).;2538;116;0,956700789;0,960381133;-0,003680344
+1173;Coprinopsis cinerea (strain Okayama-7 / 130 / ATCC MYA-4618 / FGSC 9003) (Inky cap fungus) (Hormographiella aspergillata).;265;4;0,996168582;1;-0,003831418
+356;Arthroderma otae (strain ATCC MYA-4605 / CBS 113480) (Microsporum canis).;171;52;0,986425339;0,990384615;-0,003959276
+252;Antirrhinum majus (Garden snapdragon).;194;3;0,993019197;0,997382199;-0,004363002
+4770;Trichophyton verrucosum (strain HKI 0517).;88;50;0,995263158;1;-0,004736842
+2306;Laccaria bicolor (strain S238N-H82 / ATCC MYA-4686) (Bicoloured deceiver) (Laccaria laccata var. bicolor).;205;1;0,995098039;1;-0,004901961
+4142;Saimiri boliviensis boliviensis (Bolivian squirrel monkey).;131;17;0,990712074;0,995614035;-0,004901961
+3073;Neosartorya fumigata (strain CEA10 / CBS 144.89 / FGSC A1163) (Aspergillus fumigatus).;612;82;0,975448688;0,980763921;-0,005315232
+4031;Rhinolophus ferrumequinum (Greater horseshoe bat).;78;5;0,994520548;1;-0,005479452
+2141;Hevea brasiliensis (Para rubber tree) (Siphonia brasiliensis).;76;5;0,994366197;1;-0,005633803
+744;Candida albicans (strain WO-1) (Yeast).;323;13;0,961538462;0,967741935;-0,006203474
+649;Bubalus bubalis (Domestic water buffalo).;52;20;0,96875;0,975;-0,00625
+2235;Ictalurus punctatus (Channel catfish) (Silurus punctatus).;162;10;0,993421053;1;-0,006578947
+4109;Saccharomyces cerevisiae (strain YJM789) (Baker's yeast).;1232;25;0,912410936;0,91958575;-0,007174814
+789;Capsicum annuum (Bell pepper).;138;1;0,99270073;1;-0,00729927
+3668;Pisum sativum (Garden pea).;935;30;0,942799263;0,950736648;-0,007937385
+517;Beta vulgaris (Sugar beet).;129;4;0,992;1;-0,008
+3866;Protobothrops flavoviridis (Habu) (Trimeresurus flavoviridis).;113;32;0,991898148;1;-0,008101852
+4214;Schizosaccharomyces japonicus (strain yFS275 / FY16936) (Fission yeast).;123;2;0,987603306;0,995867769;-0,008264463
+3070;Neosartorya fischeri (strain ATCC 1020 / DSM 3700 / FGSC A1164 / NRRL 181) (Aspergillus fischerianus).;1207;81;0,978477293;0,986766222;-0,008288928
+4905;Vanderwaltozyma polyspora (strain ATCC 22028 / DSM 70294) (Kluyveromyces polysporus).;871;10;0,940301974;0,94883856;-0,008536585
+2003;Glycine max (Soybean) (Glycine hispida).;909;33;0,978933167;0,988013699;-0,009080531
+4419;Sparus aurata (Gilthead sea bream).;70;11;0,990755008;1;-0,009244992
+263;Aotus nancymaae (Ma's night monkey).;64;14;0,98;0,99;-0,01
+4570;Takifugu rubripes (Japanese pufferfish) (Fugu rubripes).;497;27;0,967060678;0,977226162;-0,010165485
+3372;Paracoccidioides brasiliensis (strain Pb03).;85;9;0,988304094;1;-0,011695906
+1282;Cryptococcus neoformans var. neoformans serotype D (strain B-3501A) (Filobasidiella neoformans).;1482;6;0,986901536;0,998644986;-0,011743451
+3106;Nicotiana tabacum (Common tobacco).;974;34;0,972340426;0,984230288;-0,011889862
+1283;Cryptococcus neoformans var. neoformans serotype D (strain JEC21 / ATCC MYA-565) (Filobasidiella neoformans).;1511;6;0,986378738;0,99833887;-0,011960133
+2590;Macaca mulatta (Rhesus macaque).;682;107;0,960942706;0,973157253;-0,012214547
+2200;Hylobates lar (Common gibbon) (White-handed gibbon).;216;15;0,888225539;0,900497512;-0,012271973
+89;Ajellomyces capsulatus (strain H143) (Darling's disease fungus) (Histoplasma capsulatum).;103;4;0,987373737;1;-0,012626263
+3212;Onchocerca volvulus.;233;7;0,987357775;1;-0,012642225
+3373;Paracoccidioides brasiliensis (strain Pb18).;105;8;0,987113402;1;-0,012886598
+4208;Schistosoma japonicum (Blood fluke).;107;14;0,98156682;0,994623656;-0,013056836
+4003;Rattus norvegicus (Rat).;22373;1388;0,94020863;0,953380966;-0,013172336
+3453;Penicillium chrysogenum (Penicillium notatum).;77;4;0,98630137;1;-0,01369863
+1035;Ciona intestinalis (Transparent sea squirt) (Ascidia intestinalis).;74;2;0,986111111;1;-0,013888889
+4140;Saguinus oedipus (Cotton-top tamarin).;71;19;0,98582996;1;-0,01417004
+410;Aspergillus terreus (strain NIH 2624 / FGSC A1156).;1123;4;0,964998841;0,979253085;-0,014254245
+88;Ajellomyces capsulatus (strain G186AR / H82 / ATCC MYA-2454 / RMSCC 2432) (Darling's disease fungus) (Histoplasma capsulatum).;130;8;0,985655738;1;-0,014344262
+1968;Gibberella zeae (strain PH-1 / ATCC MYA-4620 / FGSC 9075 / NRRL 31084) (Wheat head blight fungus) (Fusarium graminearum).;878;9;0,983122363;0,999424626;-0,016302263
+3130;Notophthalmus viridescens (Eastern newt) (Triturus viridescens).;62;1;0,983606557;1;-0,016393443
+3454;Penicillium chrysogenum (strain ATCC 28089 / DSM 1075 / Wisconsin 54-1255) (Penicillium notatum).;179;13;0,980537535;0,996987952;-0,016450417
+621;Branchiostoma floridae (Florida lancelet) (Amphioxus).;259;2;0,655642023;0,672178988;-0,016536965
+4892;Ustilago maydis (strain 521 / FGSC 9021) (Corn smut fungus).;1358;9;0,904950169;0,922205749;-0,01725558
+401;Aspergillus oryzae (strain ATCC 42149 / RIB 40) (Yellow koji mold).;1622;113;0,96326466;0,981638194;-0,018373535
+2103;Heliothis virescens (Tobacco budworm moth).;86;6;0,98125;1;-0,01875
+2936;Mus musculus (Mouse).;48910;10;0,930983649;0,949813282;-0,018829633
+4209;Schistosoma mansoni (Blood fluke).;222;8;0,879672897;0,900116822;-0,020443925
+400;Aspergillus niger (strain CBS 513.88 / FGSC A1513).;1140;62;0,967377874;0,988372093;-0,020994219
+3557;Phaseolus vulgaris (Kidney bean) (French bean).;244;21;0,928037583;0,9501388;-0,022101217
+4107;Saccharomyces cerevisiae (strain RM11-1a) (Baker's yeast).;480;13;0,860813704;0,883544721;-0,022731016
+4227;Sclerotinia sclerotiorum (strain ATCC 18683 / 1980 / Ss-1) (White mold) (Whetzelinia sclerotiorum).;674;8;0,975975976;0,999249249;-0,023273273
+4861;Uncinocarpus reesii (strain UAMH 1704).;137;14;0,970963995;0,995934959;-0,024970964
+1997;Gloydius halys (Chinese water mocassin) (Agkistrodon halys).;146;11;0,974410774;1;-0,025589226
+3072;Neosartorya fumigata (strain ATCC MYA-4609 / Af293 / CBS 101355 / FGSC A1100) (Aspergillus fumigatus).;2080;127;0,953485653;0,979290895;-0,025805242
+743;Candida albicans (strain SC5314 / ATCC MYA-2876) (Yeast).;2962;152;0,930059468;0,956337797;-0,026278329
+2296;Komagataella pastoris (strain GS115 / ATCC 20864) (Yeast) (Pichia pastoris).;200;6;0,970790378;0,99742268;-0,026632302
+4149;Salmo salar (Atlantic salmon).;589;20;0,938400703;0,96572935;-0,027328647
+3228;Ophiophagus hannah (King cobra) (Naja hannah).;63;39;0,959401709;0,987179487;-0,027777778
+4521;Sus scrofa (Pig).;3025;341;0,94113373;0,968943801;-0,02781007
+626;Brassica napus (Rape).;638;17;0,942123709;0,970588235;-0,028464526
+745;Candida albicans (Yeast).;431;25;0,968669951;0,997536946;-0,028866995
+3465;Penicillium marneffei (strain ATCC 18224 / CBS 334.59 / QM 7333).;150;1;0,970950704;1;-0,029049296
+3310;Oxyuranus scutellatus scutellatus (Australian taipan) (Coastal taipan).;54;16;0,970394737;1;-0,029605263
+4712;Toxoplasma gondii.;153;16;0,813868613;0,84375;-0,029881387
+3355;Pan troglodytes (Chimpanzee).;1649;1;0,912172439;0,942570035;-0,030397596
+1082;Coccidioides posadasii (strain C735) (Valley fever fungus).;148;35;0,968900126;1;-0,031099874
+4105;Saccharomyces cerevisiae (strain Lalvin EC1118 / Prise de mousse) (Baker's yeast).;380;9;0,91015274;0,944444444;-0,034291704
+4573;Talaromyces stipitatus (strain ATCC 10500 / CBS 375.48 / QM 6759 / NRRL 1006) (Penicillium stipitatum).;162;6;0,96474359;1;-0,03525641
+2743;Mesocricetus auratus (Golden hamster).;707;50;0,959695586;0,996194825;-0,036499239
+3267;Oryza sativa subsp. indica (Rice).;1800;42;0,932004713;0,969080124;-0,03707541
+91;Ajellomyces capsulatus (strain NAm1 / WU24) (Darling's disease fungus) (Histoplasma capsulatum).;393;7;0,9607698;0,998704663;-0,037934863
+795;Carassius auratus (Goldfish).;424;25;0,866365915;0,90481203;-0,038446115
+3362;Papio hamadryas (Hamadryas baboon).;152;21;0,772446383;0,812068339;-0,039621956
+354;Arthroderma gypseum (strain ATCC MYA-4604 / CBS 118893) (Microsporum gypseum).;83;32;0,960171569;1;-0,039828431
+761;Candida tropicalis (Yeast).;73;1;0,958333333;1;-0,041666667
+5011;Yarrowia lipolytica (strain CLIB 122 / E 150) (Yeast) (Candida lipolytica).;2535;22;0,884961835;0,927043013;-0,042081178
+3386;Paramecium tetraurelia.;287;10;0,857400722;0,9;-0,042599278
+2587;Macaca fuscata fuscata (Japanese macaque).;102;10;0,956521739;1;-0,043478261
+2633;Magnaporthe oryzae (strain 70-15 / ATCC MYA-4617 / FGSC 8958) (Rice blast fungus) (Pyricularia oryzae).;1142;26;0,93824097;0,983422939;-0,045181969
+2160;Homo sapiens (Human).;63981;3056;0,896752635;0,943288609;-0,046535974
+1221;Cricetulus griseus (Chinese hamster) (Cricetulus barabensis griseus).;695;24;0,900273224;0,947124938;-0,046851714
+665;Bungarus fasciatus (Banded krait) (Pseudoboa fasciata).;71;15;0,952380952;1;-0,047619048
+1630;Drosophila yakuba (Fruit fly).;909;29;0,917789969;0,965517241;-0,047727273
+2925;Mustela putorius furo (European domestic ferret) (Mustela furo).;81;3;0,945070423;0,992957746;-0,047887324
+760;Candida tropicalis (strain ATCC MYA-3404 / T1) (Yeast).;184;5;0,950837989;1;-0,049162011
+1198;Coturnix coturnix japonica (Japanese quail) (Coturnix japonica).;246;25;0,860452489;0,912488688;-0,052036199
+51;Aedes aegypti (Yellowfever mosquito) (Culex aegypti).;961;30;0,903795202;0,955925528;-0,052130326
+3374;Paracoccidioides lutzii (strain ATCC MYA-826 / Pb01) (Paracoccidioides brasiliensis).;106;7;0,945165945;1;-0,054834055
+1115;Colobus guereza (Mantled guereza) (Eastern black-and-white colobus monkey).;69;13;0,945054945;1;-0,054945055
+3536;Phaeosphaeria nodorum (strain SN15 / ATCC MYA-4574 / FGSC 10173) (Glume blotch fungus) (Septoria nodorum).;913;12;0,942101369;0,997780244;-0,055678875
+1028;Cicer arietinum (Chickpea) (Garbanzo).;116;3;0,943952802;1;-0,056047198
+3294;Ovis aries (Sheep).;975;137;0,888834207;0,945355643;-0,056521436
+3288;Otolemur garnettii (Small-eared galago) (Garnett's greater bushbaby).;61;6;0,942424242;1;-0,057575758
+5022;Zea mays (Maize).;1641;49;0,88922931;0,948351451;-0,059122141
+3051;Nectria haematococca (strain 77-13-4 / ATCC MYA-4622 / FGSC 9596 / MPVI) (Fusarium solani subsp. pisi).;197;6;0,940663176;1;-0,059336824
+394;Aspergillus flavus (strain ATCC 200026 / FGSC A1120 / NRRL 3357 / JCM 12722 / SRRC 167).;276;6;0,877233782;0,938372093;-0,061138311
+835;Cavia porcellus (Guinea pig).;678;97;0,922192452;0,983675497;-0,061483046
+900;Cervus elaphus (Red deer).;78;15;0,936507937;1;-0,063492063
+4045;Rhipicephalus sanguineus (Brown dog tick) (Ixodes sanguineus).;141;3;0,862318841;0,927536232;-0,065217391
+4656;Theileria parva (East coast fever infection agent).;114;4;0,809090909;0,875;-0,065909091
+3327;Panax ginseng (Korean ginseng).;213;12;0,882075472;0,948113208;-0,066037736
+4098;Saccharomyces cerevisiae (strain AWRI1631) (Baker's yeast).;283;10;0,881684982;0,948168498;-0,066483516
+733;Camelus dromedarius (Dromedary) (Arabian camel).;55;6;0,931972789;1;-0,068027211
+3257;Oryctolagus cuniculus (Rabbit).;1837;171;0,8948948;0,963025561;-0,068130761
+4442;Spinacia oleracea (Spinach).;492;3;0,931833674;1;-0,068166326
+76;Agkistrodon piscivorus piscivorus (Eastern cottonmouth).;63;5;0,931034483;1;-0,068965517
+3092;Neurospora crassa (strain ATCC 24698 / 74-OR23-1A / CBS 708.71 / DSM 1257 / FGSC 987).;3036;34;0,875818082;0,94572246;-0,069904377
+1994;Gloydius blomhoffii (Mamushi) (Agkistrodon halys blomhoffi).;85;7;0,926739927;1;-0,073260073
+3804;Pongo pygmaeus (Bornean orangutan).;455;48;0,847563473;0,926341114;-0,078777641
+752;Candida maltosa (Yeast).;78;2;0,921052632;1;-0,078947368
+3629;Pichia angusta (Yeast) (Hansenula polymorpha).;122;3;0,915966387;0,995798319;-0,079831933
+2311;Lachancea thermotolerans (strain ATCC 56472 / CBS 6340 / NRRL Y-8284) (Yeast) (Kluyveromyces thermotolerans).;364;5;0,818384401;0,898607242;-0,080222841
+4103;Saccharomyces cerevisiae (strain JAY291) (Baker's yeast).;409;9;0,864166667;0,944444444;-0,080277778
+4975;Vitis vinifera (Grape).;318;7;0,919614148;1;-0,080385852
+766;Canis familiaris (Dog) (Canis lupus familiaris).;1640;226;0,885878885;0,966560689;-0,080681804
+990;Chlamydomonas reinhardtii (Chlamydomonas smithii).;962;8;0,772667715;0,854035639;-0,081367925
+3682;Plasmodium chabaudi.;103;1;0,833333333;0,916666667;-0,083333333
+211;Anopheles gambiae (African malaria mosquito).;930;34;0,870962447;0,954766282;-0,083803834
+4027;Rhinoceros unicornis (Greater Indian rhinoceros).;142;1;0,843971631;0,929078014;-0,085106383
+2022;Gorilla gorilla gorilla (Western lowland gorilla).;682;67;0,872054362;0,963936415;-0,091882053
+2165;Hordeum vulgare (Barley).;719;45;0,881767227;0,974793933;-0,093026706
+1382;Cyprinus carpio (Common carp).;208;18;0,744736842;0,841812865;-0,097076023
+409;Aspergillus terreus.;55;74;0,901960784;1;-0,098039216
+1285;Cryptomeria japonica (Japanese cedar) (Cupressus japonica).;101;2;0,898989899;1;-0,101010101
+4144;Saimiri sciureus (Common squirrel monkey).;90;20;0,89;0,992857143;-0,102857143
+3071;Neosartorya fumigata (Aspergillus fumigatus).;51;6;0,896296296;1;-0,103703704
+94;Ajellomyces dermatitidis (strain SLH14081) (Blastomyces dermatitidis).;122;9;0,895771878;1;-0,104228122
+4930;Verticillium alfalfae (strain VaMs.102 / ATCC MYA-4576 / FGSC 10136) (Verticillium wilt of alfalfa) (Verticillium albo-atrum).;80;6;0,810810811;0,916666667;-0,105855856
+179;Anas platyrhynchos (Mallard) (Anas boschas).;103;10;0,735483871;0,842473118;-0,106989247
+93;Ajellomyces dermatitidis (strain ER-3 / ATCC MYA-2586) (Blastomyces dermatitidis).;123;8;0,890217391;1;-0,109782609
+3201;Olea europaea (Common olive).;101;4;0,757731959;0,875;-0,117268041
+393;Aspergillus flavus.;89;86;0,767068273;0,885542169;-0,118473896
+4803;Triticum aestivum (Wheat).;733;53;0,857880133;0,981132075;-0,123251942
+3219;Oncorhynchus mykiss (Rainbow trout) (Salmo gairdneri).;374;38;0,844924812;0,96875;-0,123825188
+3354;Pan paniscus (Pygmy chimpanzee) (Bonobo).;330;207;0,835167715;0,966981132;-0,131813417
+2558;Lumbricus terrestris (Common earthworm).;145;2;0,867132867;1;-0,132867133
+4635;Tetraodon nigroviridis (Spotted green pufferfish) (Chelonodon nigroviridis).;288;5;0,812014134;0,962897527;-0,150883392
+1890;Gadus morhua (Atlantic cod).;215;5;0,699047619;0,852380952;-0,153333333
+1740;Equus caballus (Horse).;610;87;0,805828443;0,978967495;-0,173139052
+1048;Citrus sinensis (Sweet orange) (Citrus aurantium var. sinensis).;129;4;0,572;0,75;-0,178
+1587;Drosophila mauritiana (Fruit fly).;78;8;0,821428571;1;-0,178571429
+486;Balaenoptera physalus (Finback whale) (Common rorqual).;123;1;0,655737705;0,836065574;-0,180327869
+2501;Locusta migratoria (Migratory locust).;227;5;0,627027027;0,807657658;-0,180630631
+4780;Trichosurus vulpecula (Brush-tailed possum).;62;15;0,818439716;1;-0,181560284
+1834;Felis catus (Cat) (Felis silvestris catus).;547;82;0,751062156;0,935470758;-0,184408602
+4460;Squalus acanthias (Spiny dogfish).;206;1;0,712195122;0,902439024;-0,190243902
+1433;Delphinapterus leucas (Beluga whale).;68;3;0,805128205;1;-0,194871795
+3382;Paralichthys olivaceus (Bastard halibut) (Hippoglossus olivaceus).;59;13;0,802675585;1;-0,197324415
+1688;Emericella nidulans (Aspergillus nidulans).;100;1;0,797979798;1;-0,202020202
+2867;Monodelphis domestica (Gray short-tailed opossum).;109;11;0,791280148;0,994897959;-0,203617811
+2506;Lolium perenne (Perennial ryegrass).;104;3;0,792079208;1;-0,207920792
+4409;Sorghum bicolor (Sorghum) (Sorghum vulgare).;327;5;0,685714286;0,898447205;-0,212732919
+4368;Sordaria macrospora (strain ATCC MYA-333 / DSM 997 / K(L3346) / K-hell).;112;6;0,781446541;1;-0,218553459
+3368;Paracentrotus lividus (Common sea urchin).;185;2;0,726775956;0,945355191;-0,218579235
+779;Capra hircus (Goat).;160;35;0,771657143;0,992;-0,220342857
+808;Carica papaya (Papaya).;128;5;0,67804878;0,9;-0,22195122
+2091;Helianthus annuus (Common sunflower).;288;3;0,766081871;1;-0,233918129
+1413;Dasypus novemcinctus (Nine-banded armadillo).;158;5;0,534640523;0,77254902;-0,237908497
+399;Aspergillus niger.;260;86;0,74307592;0,981345715;-0,238269795
+4987;Vulpes vulpes (Red fox).;74;6;0,759803922;1;-0,240196078
+4495;Struthio camelus (Common ostrich).;173;3;0,696078431;0,944117647;-0,248039216
+3576;Phoca vitulina (Harbor seal).;161;2;0,691823899;0,940251572;-0,248427673
+1066;Claviceps purpurea (Ergot fungus) (Sphacelia segetum).;78;2;0,75;1;-0,25
+1281;Cryptococcus neoformans var. grubii serotype A (strain H99 / ATCC 208821 / CBS 10515 / FGSC 9487) (Filobasidiella neoformans var. grubii).;88;2;0,738372093;1;-0,261627907
+622;Branchiostoma lanceolatum (Common lancelet) (Amphioxus lanceolatum).;149;1;0,608108108;0,871621622;-0,263513514
+874;Ceratitis capitata (Mediterranean fruit fly) (Tephritis capitata).;90;3;0,567049808;0,833333333;-0,266283525
+1833;Fasciola hepatica (Liver fluke).;75;1;0,72972973;1;-0,27027027
+3252;Ornithorhynchus anatinus (Duckbill platypus).;157;10;0,66122449;0,93537415;-0,27414966
+379;Ascaris suum (Pig roundworm) (Ascaris lumbricoides).;344;4;0,694117647;0,970588235;-0,276470588
+1737;Equus asinus (Donkey).;188;7;0,643251776;0,947513812;-0,304262036
+2385;Lemur catta (Ring-tailed lemur).;166;3;0,63190184;0,938650307;-0,306748466
+404;Aspergillus parasiticus.;115;1;0,614035088;0,921052632;-0,307017544
+2063;Halichoerus grypus (Gray seal).;143;3;0,623809524;0,932142857;-0,308333333
+1888;Fusarium solani subsp. pisi (Nectria haematococca).;63;2;0,68852459;1;-0,31147541
+3464;Penicillium marneffei.;64;8;0,682539683;1;-0,317460317
+571;Bos indicus (Zebu).;167;5;0,555555556;0,87654321;-0,320987654
+4764;Trichophyton rubrum (Athlete's foot fungus) (Epidermophyton rubrum).;139;22;0,654234654;0,977272727;-0,323038073
+3522;Petromyzon marinus (Sea lamprey).;188;8;0,623611111;0,947222222;-0,323611111
+3767;Podospora anserina (strain S / ATCC MYA-4624 / DSM 980 / FGSC 10383) (Pleurage anserina).;327;9;0,527603075;0,852725367;-0,325122292
+2581;Lytechinus variegatus (Green sea urchin) (Variegated urchin).;76;2;0,655405405;1;-0,344594595
+881;Ceratotherium simum (White rhinoceros) (Square-lipped rhinoceros).;142;2;0,578571429;0,928571429;-0,35
+1618;Drosophila subobscura (Fruit fly).;56;6;0,65;1;-0,35
+2148;Hippopotamus amphibius (Hippopotamus).;161;1;0,50625;0,875;-0,36875
+2573;Lymnaea stagnalis (Great pond snail) (Helix stagnalis).;75;18;0,592592593;0,972222222;-0,37962963
+3011;Myxine glutinosa (Atlantic hagfish).;144;1;0,545454545;0,93006993;-0,384615385
+1270;Cryphonectria parasitica (Chesnut blight fungus) (Endothia parasitica).;104;4;0,6025;1;-0,3975
+1479;Didelphis virginiana (North American opossum) (Didelphis marsupialis virginiana).;173;4;0,534023669;0,940828402;-0,406804734
+3651;Pinus sylvestris (Scots pine).;51;2;0,591836735;1;-0,408163265
+2222;Hypocrea jecorina (Trichoderma reesei).;108;13;0,574898785;1;-0,425101215
+3008;Mytilus edulis (Blue mussel).;123;2;0,566115702;1;-0,433884298
+2531;Loxodonta africana (African elephant).;176;2;0,545977011;1;-0,454022989
+3419;Patiria pectinifera (Starfish) (Asterina pectinifera).;147;2;0,544827586;1;-0,455172414
+4211;Schizophyllum commune (Split gill fungus).;102;6;0,539930556;1;-0,460069444
+3583;Phodopus sungorus (Striped hairy-footed hamster) (Djungarian hamster).;85;3;0,536585366;1;-0,463414634
+3080;Neovison vison (American mink) (Mustela vison).;57;11;0,513833992;1;-0,486166008
+573;Bos mutus grunniens (Wild yak) (Bos grunniens).;150;4;0,506849315;1;-0,493150685
+2727;Meriones unguiculatus (Mongolian jird) (Mongolian gerbil).;62;14;0,501488095;1;-0,498511905
