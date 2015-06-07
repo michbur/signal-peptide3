@@ -4,9 +4,12 @@ library(signalHsmm)
 library(seqinr)
 library(pbapply)
 library(cvTools)
+library(hmeasure)
+library(dplyr)
+library(reshape2)
 
 if(Sys.info()["nodename"] == "MICHALKOMP" )
-  pathway <- "C:/Users/Michal/Dropbox/signal-peptide2_data/"
+  pathway <- "D:/michal/doktorat/grant_data/signalHsmm_cv/"
 
 if(Sys.info()["nodename"] == "phobos" )
   pathway <- "/Qnap/Publikacje/signalHsmm_cv/"
@@ -58,8 +61,88 @@ fold_res <- pblapply(1L:50, function(dummy) {
 
 save(fold_res, file = paste0(pathway, "fold_res.RData"))
 
-if(exists("fold_res")) {
-  file.create("/home/michal/Dropbox/cv_success.txt")
-} else {
-  file.create("/home/michal/Dropbox/cv_fail.txt")
-}
+load(paste0(pathway, "fold_res.RData"))
+
+
+total_AUC <- data.frame(repetition = sort(rep(1L:50, length(all_groups)*5)), 
+                        do.call(rbind, lapply(fold_res, function(single_repeat) {
+                          data.frame(agg = sort(rep(1L:length(single_repeat), 5)),
+                                     do.call(rbind, lapply(single_repeat, function(single_group)
+                                       data.frame(fold = 1L:5, t(sapply(single_group, function(single_fold) {
+                                         unlist(HMeasure(as.numeric(!is.na(single_fold[, "cs_real"])), 
+                                                  single_fold[, "prob"])[["metrics"]][c("H", "AUC")])
+                                       }))
+                                       )
+                                     )))
+                        })))
+
+#total_AUC[, "H"] <- unlist(total_AUC[, "H"])
+#total_AUC[, "AUC"] <- unlist(total_AUC[, "AUC"])
+total_AUC %>% 
+  group_by(agg) %>% 
+  summarize(m_AUC = mean(AUC), sd_AUC = sd(AUC)) %>%
+  arrange(desc(m_AUC))
+#Source: local data frame [27 x 3]
+#
+#agg     m_AUC      sd_AUC
+#1   22 0.9600330 0.006160980
+#2    7 0.9593754 0.006076867
+
+thresh_vals <- c(0.005, 0.01, 1:12/20)
+mcc_optimization <- lapply(thresh_vals, function(thres)
+  sapply(fold_res, function(i) rowMeans(sapply(i[[22]], function(single_fold) {
+    res <- unlist(HMeasure(as.numeric(!is.na(single_fold[, "cs_real"])), 
+                           single_fold[, "prob"],
+                           threshold = thres)[["metrics"]][c("TP", "FP", "TN", "FN", "Sens", "Spec")])
+    TP <- as.numeric(res["TP"])
+    TN <- res["TN"]
+    FP <- res["FP"]
+    FN <- res["FN"]
+    c(mcc = unname((TP*TN - FP*FN)/sqrt((TP + FP)*(TP + FN)*(TN + FP)*(TN + FN))),
+      sens = res[["Sens"]], spec = res[["Spec"]])
+  }))))
+
+
+mmcc <- t(sapply(mcc_optimization, rowMeans)) %>% data.frame %>% mutate(sensspec = (sens + spec)/2) %>% melt
+mmcc <- cbind(rep(thresh_vals, 4), mmcc)
+colnames(mmcc) <- c("thresh", "perf", "value")
+
+
+
+library(ggplot2)
+ggplot(mmcc, aes(x = thresh, y = value, colour = perf)) +
+  geom_line()
+
+
+#final values of MCC
+final_metrics <- sapply(fold_res, function(i) rowMeans(sapply(i[[22]], function(single_fold) {
+    res <- unlist(HMeasure(as.numeric(!is.na(single_fold[, "cs_real"])), 
+                           single_fold[, "prob"],
+                           threshold = 0.01)[["metrics"]])
+    TP <- as.numeric(res["TP"])
+    TN <- res["TN"]
+    FP <- res["FP"]
+    FN <- res["FN"]
+    c(res, MCC = unname((TP*TN - FP*FN)/sqrt((TP + FP)*(TP + FN)*(TN + FP)*(TN + FN))))
+  })))
+  
+
+nice_finals <- format(t(apply(final_metrics, 1, function(i)
+  c(mean(i), sd(i), min(i), max(i)))), trim = TRUE, digits = 1,  small.interval = 0, scientific = FALSE, justify = "none")
+
+nice_finals <- nice_finals[c(3, 1, 23, 2, 5, 11L:14, 19L:22), ]
+rownames(nice_finals) <- c("Area Under the Curve",
+                           "H-measure",
+                           "Matthew's Correlation Coefficient",
+                           "Gini index",
+                           "Kolmogorov-Smirnoff statistic",
+                           "Sensitivity",
+                           "Specificity",
+                           "Precision",
+                           "Recall",
+                           "TP",
+                           "FP",
+                           "TN",
+                           "FN")
+
+write.table(nice_finals, file = "clipboard", sep = "\t")
