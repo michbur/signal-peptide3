@@ -92,6 +92,16 @@ bench_metrics <- HMeasure(real_labels,
                           threshold = c(rep(0.5, 5), 
                                         0.05, 0.05))[["metrics"]]
 
+other_soft <- read.csv2("benchmark_other.csv")[, -1]
+real_labels <- c(rep(1, 140), rep(0, 280))
+bench_metrics <- HMeasure(real_labels, 
+                          cbind(other_soft,
+                                signalHsmm2010 = pred2df(predict(train_hsmm(read_uniprot("sp1950_2010.txt", euk = TRUE, what = "signal"), aa_group = all_groups[[22]]),
+                                                                 signalHsmm::benchmark_dat))[["sp.probability"]],
+                                signalHsmm1989 = pred2df(predict(train_hsmm(read_uniprot("sp1950_1989.txt", euk = TRUE, what = "signal"), aa_group = all_groups[[22]]),
+                                                                 signalHsmm::benchmark_dat))[["sp.probability"]]),
+                          threshold = c(rep(0.5, 4), 0.05, 0.05))[["metrics"]]
+
 
 TP <- as.numeric(bench_metrics[, "TP"])
 TN <- bench_metrics[, "TN"]
@@ -99,4 +109,24 @@ FP <- bench_metrics[, "FP"]
 FN <- bench_metrics[, "FN"]
 bench_metrics <- cbind(bench_metrics, 
                        MCC = unname((TP*TN - FP*FN)/sqrt((TP + FP)*(TP + FN)*(TN + FP)*(TN + FN))))
-bench_metrics[, c("AUC", "MCC")]
+write.table(round(bench_metrics[, c("AUC", "H", "MCC", "Sens", "Spec")], 4), "clipboard", sep = "\t")
+
+
+load("plasmodium_benchmark.RData")
+other_soft <- read.csv2("other_soft.csv")[, -1]
+bench_metrics <- HMeasure(real_labels, 
+                          cbind(other_soft,
+                                signalHsmm2010 = pred2df(predict(train_hsmm(read_uniprot("sp1950_2010.txt", euk = TRUE, what = "signal"), aa_group = all_groups[[22]]),
+                                                                      plas_bench))[["sp.probability"]],
+                                     signalHsmm1989 = pred2df(predict(train_hsmm(read_uniprot("sp1950_1989.txt", euk = TRUE, what = "signal"), aa_group = all_groups[[22]]),
+                                                                      plas_bench))[["sp.probability"]]),
+                          threshold = c(rep(0.5, 4), 0.05, 0.05))[["metrics"]]
+
+
+TP <- as.numeric(bench_metrics[, "TP"])
+TN <- bench_metrics[, "TN"]
+FP <- bench_metrics[, "FP"]
+FN <- bench_metrics[, "FN"]
+bench_metrics <- cbind(bench_metrics, 
+                       MCC = unname((TP*TN - FP*FN)/sqrt((TP + FP)*(TP + FN)*(TN + FP)*(TN + FN))))
+write.table(round(bench_metrics[, c("AUC", "H", "MCC", "Sens", "Spec")], 4), "clipboard", sep = "\t")
