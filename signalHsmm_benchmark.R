@@ -79,6 +79,13 @@ neg_seqs2015 <- read.fasta("nsp2010_2015.fasta", seqtype = "AA")
 
 real_labels <- c(rep(1, length(pos_seqs2015)), rep(0, length(pos_seqs2015)))
 
+write.csv2(data.frame(signalPnotm = read_signalp41("sp4_notm.txt")[["sp.probability"]], 
+           signalPtm = read_signalp41("sp4_tm.txt")[["sp.probability"]], 
+           predsi = read_predsi("predisi.txt")[["sp.probability"]],
+           phobius = read_phobius("phobius.txt")[["sp.probability"]],
+           philius = read_philius("philius.xml")[["sp.probability"]]), file = "benchmark_other_new.csv",
+           row.names = FALSE)
+
 bench_metrics <- HMeasure(real_labels, 
                           data.frame(signalPnotm = read_signalp41("sp4_notm.txt")[["sp.probability"]], 
                                      signalPtm = read_signalp41("sp4_tm.txt")[["sp.probability"]], 
